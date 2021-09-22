@@ -18,22 +18,9 @@ body {
     line-height: 1.6;
 }
 
-.skills-header {
-    display: flex;
-    justify-content: center;
-    margin-top: 1.3em;
-}
-
 .content-container {
     width: 100%;
     display: grid;
-    a {
-        color: black;
-        text-decoration: none;
-        &:hover {
-            color: rgb(104, 104, 104);
-        }
-    }
 }
 
 .title {
@@ -50,16 +37,23 @@ body {
     .title-text {
         display: grid;
         justify-content: center;
-        grid-template-rows: 1fr 1fr;
-        h1 {
-            margin-top: 2em;
+        grid-template-rows: .8fr 1fr;
+        #title-main {
+            margin-top: 3em;
+            h1 {
+                border: 3px double $color2;
+                background-color:rgb(218, 216, 216);
+                margin: 0;
+            }
+        }
+        #title-subtitle {
+            margin-bottom: 1.5em;
         }
     }
     img {
-        margin-top: 1.5em;
-        margin-bottom: 1.5em;
+        margin-top: 5em;
         height: auto;
-        width: 13em;
+        width: 12em;
     }
 }
 
@@ -67,41 +61,58 @@ body {
 .skills {
     display: grid;
     justify-content: center;
-    grid-template-columns: 80%;
+    grid-template-columns: 90%;
     grid-template-rows: auto 15em;
     background-color: $color2;
     color: $color1;
     .skills-icons {
         display: grid;
-        grid-template-rows: .3fr .7fr;
-    }
-    .skills-icon-list {
-        padding: 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         justify-content: center;
-        img {
-            filter: invert(99%) sepia(0%) saturate(244%) hue-rotate(78deg) brightness(115%) contrast(92%);
-            height: 5em;
-            width: auto;
+        grid-template-rows: .3fr .7fr;
+        .skills-header {
+            display: flex;
+            justify-content: center;
+            margin-top: 1.3em;
+        }
+        #skills-icon-list {
+            padding: 0;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-content: space-between;
+            img {
+                filter: invert(99%) sepia(0%) saturate(244%) hue-rotate(78deg) brightness(115%) contrast(92%);
+                height: 3em;
+                width: auto;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
         }
     }
     #skills-list-grid {
         display: grid;
+        justify-content: center;
         grid-template-columns: 1fr 1fr 1fr;
-    }
-    .skills-three-columns {
-        display: grid;
-        grid-template-rows: .5fr 1fr;
-        justify-content: center;
-        height: 15em;
-    }
-    .skills-list {
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        justify-content: center;
-        padding: 0;
-        margin-bottom: 1.3em;
+        .skills-three-columns {
+            display: grid;
+            grid-template-rows: .3fr 1fr;
+            justify-content: center;
+            height: 15em;
+            .skills-cat {
+                font-size: 1.2em;
+            }
+            .skills-list {
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr;
+                justify-content: center;
+                padding: 0;
+                margin-bottom: 1.3em;
+            }
+        }
+        #skills-column2,
+        #skills-column3 {
+            border-left: 1px solid whitesmoke;
+        }
     }
 }
 
@@ -112,14 +123,30 @@ body {
     background-color: $color1;
     .projects-list {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: minmax()1fr 1fr 1fr;
         padding: 0;
         .project-screenshot {
+            display: grid;
+            justify-content: center;
+            grid-template-rows: .2fr 1fr .1fr;
+            h4 {
+                display: grid;
+                justify-content: center;
+            }
             img {
-                margin-left: 1.5em;
-                margin-right: 1.5em;
                 height: 15em;
                 width: auto;
+            }
+            label {
+                font-size: .9em;
+                // margin-bottom: 2em;
+            }
+            a {
+                color: $color2;
+                text-decoration: underline;
+                &:hover {
+                    color:rgb(207, 207, 207);
+                }
             }
         }
     }
@@ -132,7 +159,7 @@ body {
 
 #contact-me {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 4em 4em;
     justify-content: center;
     background-color: $color2;
     color: $color1;
@@ -143,6 +170,7 @@ body {
             color: $color1;
             &:hover {
                 color:rgb(207, 207, 207);
+                text-decoration: underline;
             }
         }
     }
@@ -164,8 +192,9 @@ footer {
         grid-template-columns: 1fr 1fr 1fr;
         .professional-link {
             display: grid;
-            margin-left: 5em;
-            margin-right: 5em;
+            margin-left: 2em;
+            margin-right: 2em;
+            margin-bottom: 2em;
         }
         img {
             filter: invert(99%) sepia(0%) saturate(244%) hue-rotate(78deg) brightness(115%) contrast(92%);
@@ -178,6 +207,7 @@ footer {
 .tooltip {
     position: relative;
     display: inline-block;
+    
 }
 .tooltip
 .tooltiptext {
@@ -206,4 +236,70 @@ footer {
 .professional-links {
     // display: grid;
     font-family: $font-body;
+}
+
+@media screen and (min-width: 400px) {
+    .title {
+        img {
+            margin-top: 3em;
+            height: auto;
+            width: 12em;
+        }
+    }
+
+    .skills {
+        grid-template-rows: auto 15em;
+        .skills-icons {
+            display: grid;
+            justify-content: center;
+            grid-template-rows: .2fr .8fr;
+        }
+        #skills-icon-list {
+            img {
+                height: auto;
+                width: 2em;
+                margin-left: 2em;
+                margin-right: 2em;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .projects-list {
+        width: auto;
+        // padding: 1em;
+        .project-screenshot {
+            display: grid;
+            justify-content: center;
+            img {
+                margin-left: 1em;
+                margin-right: 1em;
+                height: auto;
+                width: auto;
+            }
+        }
+    }
+    .skills {
+        #skills-icon-list {
+            img {
+                height: auto;
+                width: 5em;
+                margin-left: 2em;
+                margin-right: 2em;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1400) {
+    .skills {
+        #skills-icon-list {
+            img {
+                height: auto;
+                width: 7em;
+                margin: 4em;
+            }
+        }
+    }
 }

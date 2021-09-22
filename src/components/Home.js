@@ -27,10 +27,16 @@ function Home() {
             <div className='content'>
                 <div className='content-container title'>
                     <div className='title-text'>
-                        <h1>James Caleca</h1>
-                        <h2>Full-Stack Web Developer</h2>
+                        <div id='title-main'>
+                            <h1>James Caleca</h1>
+                        </div>
+                        <div id='title-subtitle'>
+                            <h2>Full-Stack Web Developer</h2>
+                            <h3>Cat Lover</h3>
+                            <h3>Video Game Enthusiast</h3>
+                        </div>
                     </div>
-                    <div className='title-img'>
+                    <div id='title-img'>
                         <img src={SelfPort} alt='me-img' />
                     </div>
                 </div>
@@ -38,7 +44,7 @@ function Home() {
                     <div className='skills'>
                         <div className='skills-icons'>
                             <h2 className='skills-header'>Skills</h2>
-                            <ul className='list-style-none skills-icon-list'>
+                            <ul className='list-style-none' id='skills-icon-list'>
                                 <li className='tooltip'>
                                     <span className='tooltiptext'>React</span>
                                     <img src={ReactIcon} alt='react' />
@@ -82,14 +88,14 @@ function Home() {
                                     <li>CSS3</li>
                                 </ul>
                             </div>
-                            <div className='skills-three-columns'>
+                            <div className='skills-three-columns' id='skills-column2'>
                                 <h2 className='skills-cat'>Frameworks</h2>
                                 <ul className='list-style-none skills-list'>
                                     <li>React.js</li>
                                     <li>Node.js</li>
                                 </ul>
                             </div>
-                            <div className='skills-three-columns'>
+                            <div className='skills-three-columns' id='skills-column3'>
                                 <h2 className='skills-cat'>Database</h2>
                                 <ul className='list-style-none skills-list'>
                                     <li>MongoDB</li>
@@ -107,12 +113,18 @@ function Home() {
                         </div>
                         <ul className='projects-list list-style-none'>
                             <li className='project-screenshot'>
+                                <h4>Diary Buddy</h4>
                                 <img src={DiaryIcon} alt='diary-buddy'/>
+                                <label htmlFor='diary-buddy'>
+                                    Created by James Caleca and <a href='https://www.nyjiascott.com'>Nyjia Scott</a>
+                                </label>
                             </li>
                             <li className='project-screenshot'>
+                                <h4>Beer Recipe Finder</h4>
                                 <img src={BeerRecIcon} alt='beer-recipes' />
                             </li>
                             <li className='project-screenshot'>
+                                <h4>Item Poster</h4>
                                 <img src={PostThingIcon} alt='ugly-things' />
                             </li>
                         </ul>
@@ -120,7 +132,7 @@ function Home() {
                 </div>
                 <div className='content-container'>
                     <div id='contact-me'>
-                        <h2>Shoot me an email:</h2>
+                        <h2>Send me an email:</h2>
                         <h3><a href='mailto:jacaleca2@gmail.com'>jacaleca2@gmail.com</a></h3>
                     </div>
                 </div>
