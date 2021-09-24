@@ -110,6 +110,7 @@ body {
             gap: 2em .5em;
             justify-content: space-evenly;
             align-content: space-between;
+            margin-bottom: 3em;
             img {
                 filter: invert(99%) sepia(0%) saturate(244%) hue-rotate(78deg) brightness(115%) contrast(92%);
                 height: 4em;
@@ -229,8 +230,8 @@ footer {
 
 .tooltip {
     position: relative;
-    display: inline-block;
-    
+    display: flex;
+    // height: auto;
 }
 .tooltip
 .tooltiptext {
@@ -307,12 +308,10 @@ footer {
 
 @media screen and (min-width: 1400px) {
     #skills {
-        #skills-icon-list {
-            gap: .5em .5em;
-            img {
-                height: auto;
-                width: 7em;
-                margin: 4em;
+        .skills-icons {
+            #skills-icon-list {
+                gap: .5em .5em;
+                margin-bottom: 4em;
             }
         }
     }
