@@ -25,13 +25,14 @@ function Home() {
         <>
             {/* <Navbar /> */}
             <div className='content'>
-                <div className='content-container title'>
-                    <div className='title-text'>
+                <div className='content-container' id='title'>
+                    <div id='title-text'>
                         <div id='title-main'>
                             <h1>James Caleca</h1>
                         </div>
                         <div id='title-subtitle'>
                             <h2>Full-Stack Web Developer</h2>
+                            <h3>Musician</h3>
                             <h3>Cat Lover</h3>
                             <h3>Video Game Enthusiast</h3>
                         </div>
@@ -41,7 +42,7 @@ function Home() {
                     </div>
                 </div>
                 <div className='content-container'>
-                    <div className='skills'>
+                    <div id='skills'>
                         <div className='skills-icons'>
                             <h2 className='skills-header'>Skills</h2>
                             <ul className='list-style-none' id='skills-icon-list'>
@@ -107,11 +108,11 @@ function Home() {
                     </div>
                 </div>
                 <div className='content-container'>
-                    <div className='projects'>
+                    <div id='projects'>
                         <div id='projects-title'>
                             <h2>Projects I've worked on</h2>
                         </div>
-                        <ul className='projects-list list-style-none'>
+                        <ul id='projects-list' className='list-style-none'>
                             <li className='project-screenshot'>
                                 <h4>Diary Buddy</h4>
                                 <img src={DiaryIcon} alt='diary-buddy'/>

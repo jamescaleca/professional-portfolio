@@ -18,78 +18,150 @@ body {
   display: grid;
 }
 
-.title {
-  display: -ms-grid;
-  display: grid;
+#title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   background-color: whitesmoke;
-  text-align: center;
   position: relative;
   width: 100%;
   z-index: 999;
   padding: 0;
   height: auto;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#title #title-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 1em;
+}
+
+#title #title-text #title-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1em;
+  padding: .5rem 1rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.title .title-text {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-grid-rows: .8fr 1fr;
-      grid-template-rows: .8fr 1fr;
-}
-
-.title .title-text #title-main {
-  margin-top: 3em;
-}
-
-.title .title-text #title-main h1 {
+#title #title-text #title-main h1 {
+  padding: .5rem 1rem;
+  text-align: center;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
   border: 3px double #141414;
   background-color: #dad8d8;
   margin: 0;
 }
 
-.title .title-text #title-subtitle {
-  margin-bottom: 1.5em;
+#title #title-text #title-subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1em;
 }
 
-.title img {
-  margin-top: 5em;
+#title #title-text #title-subtitle h2, #title #title-text #title-subtitle h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+#title #title-img {
+  margin-left: 1em;
+  margin-right: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#title #title-img img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: auto;
-  width: 12em;
+  width: 10em;
 }
 
-.skills {
-  display: -ms-grid;
-  display: grid;
+#skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-grid-columns: 90%;
-      grid-template-columns: 90%;
-  -ms-grid-rows: auto 15em;
-      grid-template-rows: auto 15em;
   background-color: #141414;
   color: whitesmoke;
 }
 
-.skills .skills-icons {
-  display: -ms-grid;
-  display: grid;
+#skills .skills-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-grid-rows: .3fr .7fr;
-      grid-template-rows: .3fr .7fr;
 }
 
-.skills .skills-icons .skills-header {
+#skills .skills-icons .skills-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,7 +171,7 @@ body {
   margin-top: 1.3em;
 }
 
-.skills .skills-icons #skills-icon-list {
+#skills .skills-icons #skills-icon-list {
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -108,23 +180,24 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  gap: 2em .5em;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -ms-flex-line-pack: justify;
       align-content: space-between;
 }
 
-.skills .skills-icons #skills-icon-list img {
+#skills .skills-icons #skills-icon-list img {
   -webkit-filter: invert(99%) sepia(0%) saturate(244%) hue-rotate(78deg) brightness(115%) contrast(92%);
           filter: invert(99%) sepia(0%) saturate(244%) hue-rotate(78deg) brightness(115%) contrast(92%);
-  height: 3em;
+  height: 4em;
   width: auto;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.skills #skills-list-grid {
+#skills #skills-list-grid {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -134,7 +207,7 @@ body {
       grid-template-columns: 1fr 1fr 1fr;
 }
 
-.skills #skills-list-grid .skills-three-columns {
+#skills #skills-list-grid .skills-three-columns {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: .3fr 1fr;
@@ -145,11 +218,11 @@ body {
   height: 15em;
 }
 
-.skills #skills-list-grid .skills-three-columns .skills-cat {
+#skills #skills-list-grid .skills-three-columns .skills-cat {
   font-size: 1.2em;
 }
 
-.skills #skills-list-grid .skills-three-columns .skills-list {
+#skills #skills-list-grid .skills-three-columns .skills-list {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr 1fr 1fr;
@@ -161,69 +234,85 @@ body {
   margin-bottom: 1.3em;
 }
 
-.skills #skills-list-grid #skills-column2,
-.skills #skills-list-grid #skills-column3 {
+#skills #skills-list-grid #skills-column2,
+#skills #skills-list-grid #skills-column3 {
   border-left: 1px solid whitesmoke;
 }
 
-.projects {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 4em 1fr;
-      grid-template-rows: 4em 1fr;
+#projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   background-color: whitesmoke;
 }
 
-.projects .projects-list {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: minmax() 1fr 1fr 1fr;
-      grid-template-rows: minmax() 1fr 1fr 1fr;
+#projects #projects-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
   padding: 0;
 }
 
-.projects .projects-list .project-screenshot {
-  display: -ms-grid;
-  display: grid;
+#projects #projects-list .project-screenshot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-grid-rows: .2fr 1fr .1fr;
-      grid-template-rows: .2fr 1fr .1fr;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.projects .projects-list .project-screenshot h4 {
-  display: -ms-grid;
-  display: grid;
+#projects #projects-list .project-screenshot h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.projects .projects-list .project-screenshot img {
+#projects #projects-list .project-screenshot img {
   height: 15em;
   width: auto;
 }
 
-.projects .projects-list .project-screenshot label {
+#projects #projects-list .project-screenshot label {
   font-size: .9em;
 }
 
-.projects .projects-list .project-screenshot a {
+#projects #projects-list .project-screenshot a {
   color: #141414;
   text-decoration: underline;
 }
 
-.projects .projects-list .project-screenshot a:hover {
+#projects #projects-list .project-screenshot a:hover {
   color: #cfcfcf;
 }
 
-.projects #projects-title {
-  display: -ms-grid;
-  display: grid;
+#projects #projects-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -259,37 +348,30 @@ body {
 }
 
 footer {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 80%;
-      grid-template-rows: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #141414;
-  position: relative;
   margin-top: 0;
-  height: auto;
 }
 
 footer .professional-links {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-bottom: 2em;
   padding: 0;
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-}
-
-footer .professional-links .professional-link {
-  display: -ms-grid;
-  display: grid;
-  margin-left: 2em;
-  margin-right: 2em;
-  margin-bottom: 2em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 footer .professional-links img {
@@ -334,62 +416,59 @@ footer .professional-links img {
 }
 
 @media screen and (min-width: 400px) {
-  .title img {
-    margin-top: 3em;
-    height: auto;
-    width: 12em;
-  }
-  .skills {
+  #skills {
     -ms-grid-rows: auto 15em;
         grid-template-rows: auto 15em;
   }
-  .skills .skills-icons {
-    display: -ms-grid;
-    display: grid;
+  #skills .skills-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-grid-rows: .2fr .8fr;
-        grid-template-rows: .2fr .8fr;
-  }
-  .skills #skills-icon-list img {
-    height: auto;
-    width: 2em;
-    margin-left: 2em;
-    margin-right: 2em;
   }
 }
 
 @media screen and (min-width: 770px) {
-  .projects-list {
-    width: auto;
+  #title #title-img img {
+    width: 14em;
   }
-  .projects-list .project-screenshot {
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  #skills .skills-icons #skills-icon-list {
+    gap: 1.5em .5em;
   }
-  .projects-list .project-screenshot img {
+  #projects #projects-list {
+    padding: 1em;
+  }
+  #projects #projects-list .project-screenshot img {
     margin-left: 1em;
     margin-right: 1em;
-    height: auto;
-    width: auto;
   }
-  .skills #skills-icon-list img {
-    height: auto;
-    width: 5em;
-    margin-left: 2em;
-    margin-right: 2em;
+  footer .professional-links {
+    width: 80%;
   }
 }
 
-@media screen and (min-width: 1400) {
-  .skills #skills-icon-list img {
+@media screen and (min-width: 1400px) {
+  #skills #skills-icon-list {
+    gap: .5em .5em;
+  }
+  #skills #skills-icon-list img {
     height: auto;
     width: 7em;
     margin: 4em;
+  }
+  #projects #projects-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .professional-links {
+    width: 70%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
