@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import LinkedinIcon from '../icons/linkedin-icon.svg'
 import GithubIcon from '../icons/github-icon.svg'
-import ResumeIcon from '../icons/file-icon.svg'
 import ReactIcon from '../icons/react-icon.svg'
 import JsIcon from '../icons/js-icon.svg'
 import HtmlIcon from '../icons/html5-icon.svg'
@@ -10,12 +9,11 @@ import CssIcon from '../icons/css3-icon.svg'
 import VsIcon from '../icons/vscode-icon.svg'
 import NodeIcon from '../icons/node-icon.svg'
 import SassIcon from '../icons/sass-icon.svg'
+import EmailIcon from '../icons/email-icon.svg'
 import SelfPort from '../icons/it-me.jpg'
 import DiaryIcon from '../project-screenshots/diary-buddy.png'
 import BeerRecIcon from '../project-screenshots/beer-recipe.png'
 import PostThingIcon from '../project-screenshots/post-a-thing.png'
-
-import Resume from '../pdfs/James_Caleca_Resume_VSchool.pdf'
 
 import '../styles/styles.css'
 
@@ -28,7 +26,7 @@ function Home() {
                 <div className='content-container' id='title'>
                     <div id='title-text'>
                         <div id='title-main'>
-                            <h1>James Caleca</h1>
+                            <h1>JAMES CALECA</h1>
                         </div>
                         <div id='title-subtitle'>
                             <h2>Full-Stack Web Developer</h2>
@@ -131,12 +129,6 @@ function Home() {
                         </ul>
                     </div>
                 </div>
-                <div className='content-container'>
-                    <div id='contact-me'>
-                        <h2>Send me an email:</h2>
-                        <h3><a href='mailto:jacaleca2@gmail.com'>jacaleca2@gmail.com</a></h3>
-                    </div>
-                </div>
             </div>
             <footer>
                 <ul className='professional-links list-style-none'>
@@ -153,9 +145,10 @@ function Home() {
                         </Link>
                     </li>
                     <li className='professional-link tooltip'>
-                        <span className='tooltiptext'>Resume</span>
-                        <a href={Resume}><img src={ResumeIcon} alt='resume'/></a>
+                        <span className='tooltiptext'>E-mail</span>
+                        <a href='mailto:jacaleca2@gmail.com'><img src={EmailIcon} alt='email'/></a>
                     </li>
+                    
                 </ul>
             </footer>
         </>
