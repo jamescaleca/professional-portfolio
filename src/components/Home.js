@@ -113,7 +113,9 @@ function Home() {
                         <ul id='projects-list' className='list-style-none'>
                             <li className='project-screenshot'>
                                 <h4>Diary Buddy</h4>
-                                <img src={DiaryIcon} alt='diary-buddy'/>
+                                <a href='https://diarybuddy.herokuapp.com/'>
+                                    <img src={DiaryIcon} alt='diary-buddy'/>
+                                </a>
                                 <label htmlFor='diary-buddy'>
                                     Created by James Caleca and <a href='https://www.nyjiascott.com'>Nyjia Scott</a>
                                 </label>
