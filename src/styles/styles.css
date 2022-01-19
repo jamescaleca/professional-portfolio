@@ -18,26 +18,7 @@ body {
   display: grid;
 }
 
-#title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  background-color: whitesmoke;
-  position: relative;
-  width: 100%;
-  z-index: 999;
-  padding: 0;
-  height: auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#title #title-text {
+#title-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,36 +26,56 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: 1em;
+  background-color: whitesmoke;
+  position: relative;
+  width: 100%;
+  z-index: 999;
+  padding: 0;
+  height: auto;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
 }
 
-#title #title-text #title-main {
+#title-text #title-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 1em;
-  padding: .5rem 1rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
 }
 
-#title #title-text #title-main h1 {
-  padding: .5rem 1rem;
+#title-text #title-main #name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.5rem;
+}
+
+#title-text #title-main img {
+  right: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  width: 9em;
+  margin-right: 20px;
   -ms-flex-negative: 1;
       flex-shrink: 1;
-  font-size: 4rem;
-  margin: 0;
 }
 
-#title #title-text #title-subtitle {
+#title-text #title-subtitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,45 +92,19 @@ body {
   margin-bottom: 1em;
 }
 
-#title #title-text #title-subtitle h2, #title #title-text #title-subtitle h3 {
+#title-text #title-subtitle h2, #title-text #title-subtitle h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
 }
 
-#title #title-img {
-  margin-left: 1em;
-  margin-right: 1em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+#title-text #title-subtitle h2 {
+  margin-bottom: .5em;
 }
 
-#title #title-img img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: auto;
-  width: 10em;
+#title-text #title-subtitle h3 {
+  margin-bottom: .2em;
 }
 
 #skills {
@@ -145,6 +120,7 @@ body {
           justify-content: center;
   background-color: #141414;
   color: whitesmoke;
+  width: 100%;
 }
 
 #skills .skills-icons {
@@ -418,6 +394,12 @@ footer .professional-links img {
 }
 
 @media screen and (min-width: 400px) {
+  #title-text {
+    margin-left: 2em;
+  }
+  #title-text #title-main h1 {
+    font-size: 3rem;
+  }
   #skills {
     -ms-grid-rows: auto 15em;
         grid-template-rows: auto 15em;
@@ -433,8 +415,8 @@ footer .professional-links img {
 }
 
 @media screen and (min-width: 770px) {
-  #title #title-img img {
-    width: 14em;
+  #title-text #title-main img {
+    width: 13em;
   }
   #skills .skills-icons #skills-icon-list {
     gap: 1.5em .5em;
@@ -452,6 +434,9 @@ footer .professional-links img {
 }
 
 @media screen and (min-width: 1400px) {
+  #title-text #title-main img {
+    width: 18em;
+  }
   #skills .skills-icons #skills-icon-list {
     gap: .5em .5em;
     margin-bottom: 4em;

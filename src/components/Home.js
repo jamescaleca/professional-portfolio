@@ -23,85 +23,79 @@ function Home() {
         <>
             {/* <Navbar /> */}
             <div className='content'>
-                <div className='content-container' id='title'>
-                    <div id='title-text'>
-                        <div id='title-main'>
-                            <h1>JAMES CALECA</h1>
-                        </div>
-                        <div id='title-subtitle'>
-                            <h2>Full-Stack Web Developer</h2>
-                            <h3>Musician</h3>
-                            <h3>Cat Lover</h3>
-                            <h3>Video Game Enthusiast</h3>
-                        </div>
-                    </div>
-                    <div id='title-img'>
+                <div id='title-text'>
+                    <div id='title-main'>
+                        <h1 id='name'>JAMES CALECA</h1>
                         <img src={SelfPort} alt='me-img' />
                     </div>
+                    <div id='title-subtitle'>
+                        <h2>Full-Stack Web Developer</h2>
+                        <h3>Musician</h3>
+                        <h3>Cat Lover</h3>
+                        <h3>Video Game Enthusiast</h3>
+                    </div>
                 </div>
-                <div className='content-container'>
-                    <div id='skills'>
-                        <div className='skills-icons'>
-                            <h2 className='skills-header'>Skills</h2>
-                            <ul className='list-style-none' id='skills-icon-list'>
-                                <li className='tooltip'>
-                                    <span className='tooltiptext'>React</span>
-                                    <img src={ReactIcon} alt='react' />
-                                </li>
-                                <li className='tooltip'>
-                                    <span className='tooltiptext'>JavaScript</span>
-                                    <img src={JsIcon} alt='javascript' />
-                                </li>
-                                <li className='tooltip'>
-                                    <span className='tooltiptext'>Node.js</span>
-                                    <img src={NodeIcon} alt='nodejs' />
-                                </li>
-                                <li className='tooltip'>
-                                    <span className='tooltiptext'>HTML5</span>
-                                    <img src={HtmlIcon} alt='html5' />
-                                </li>
-                                <li className='tooltip'>
-                                    <span className='tooltiptext'>CSS3</span>
-                                    <img src={CssIcon} alt='css3' />
-                                </li>
-                                <li className='tooltip'>
-                                    <span className='tooltiptext'>Github</span>
-                                    <img src={GithubIcon} alt='github' />
-                                </li>
-                                <li className='tooltip'>
-                                    <span className='tooltiptext'>VS Code</span>
-                                    <img src={VsIcon} alt='visualstudio' />
-                                </li>
-                                <li className='tooltip'>
-                                    <span className='tooltiptext'>Sass</span>
-                                    <img src={SassIcon} alt='sass' />
-                                </li>
+                <div id='skills'>
+                    <div className='skills-icons'>
+                        <h2 className='skills-header'>Skills</h2>
+                        <ul className='list-style-none' id='skills-icon-list'>
+                            <li className='tooltip'>
+                                <span className='tooltiptext'>React</span>
+                                <img src={ReactIcon} alt='react' />
+                            </li>
+                            <li className='tooltip'>
+                                <span className='tooltiptext'>JavaScript</span>
+                                <img src={JsIcon} alt='javascript' />
+                            </li>
+                            <li className='tooltip'>
+                                <span className='tooltiptext'>Node.js</span>
+                                <img src={NodeIcon} alt='nodejs' />
+                            </li>
+                            <li className='tooltip'>
+                                <span className='tooltiptext'>HTML5</span>
+                                <img src={HtmlIcon} alt='html5' />
+                            </li>
+                            <li className='tooltip'>
+                                <span className='tooltiptext'>CSS3</span>
+                                <img src={CssIcon} alt='css3' />
+                            </li>
+                            <li className='tooltip'>
+                                <span className='tooltiptext'>Github</span>
+                                <img src={GithubIcon} alt='github' />
+                            </li>
+                            <li className='tooltip'>
+                                <span className='tooltiptext'>VS Code</span>
+                                <img src={VsIcon} alt='visualstudio' />
+                            </li>
+                            <li className='tooltip'>
+                                <span className='tooltiptext'>Sass</span>
+                                <img src={SassIcon} alt='sass' />
+                            </li>
+                        </ul>
+                    </div>
+                    <div id='skills-list-grid'>
+                        <div className='skills-three-columns'>
+                            <h2 className='skills-cat'>Languages</h2>
+                            <ul className='list-style-none skills-list'>
+                                <li>JavaScript</li>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
                             </ul>
                         </div>
-                        <div id='skills-list-grid'>
-                            <div className='skills-three-columns'>
-                                <h2 className='skills-cat'>Languages</h2>
-                                <ul className='list-style-none skills-list'>
-                                    <li>JavaScript</li>
-                                    <li>HTML5</li>
-                                    <li>CSS3</li>
-                                </ul>
-                            </div>
-                            <div className='skills-three-columns' id='skills-column2'>
-                                <h2 className='skills-cat'>Frameworks</h2>
-                                <ul className='list-style-none skills-list'>
-                                    <li>React.js</li>
-                                    <li>Node.js</li>
-                                </ul>
-                            </div>
-                            <div className='skills-three-columns' id='skills-column3'>
-                                <h2 className='skills-cat'>Database</h2>
-                                <ul className='list-style-none skills-list'>
-                                    <li>MongoDB</li>
-                                    <li>Express.js</li>
-                                    <li>Mongoose</li>
-                                </ul>
-                            </div>
+                        <div className='skills-three-columns' id='skills-column2'>
+                            <h2 className='skills-cat'>Frameworks</h2>
+                            <ul className='list-style-none skills-list'>
+                                <li>React.js</li>
+                                <li>Node.js</li>
+                            </ul>
+                        </div>
+                        <div className='skills-three-columns' id='skills-column3'>
+                            <h2 className='skills-cat'>Database</h2>
+                            <ul className='list-style-none skills-list'>
+                                <li>MongoDB</li>
+                                <li>Express.js</li>
+                                <li>Mongoose</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
