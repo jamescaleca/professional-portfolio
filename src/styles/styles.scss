@@ -253,7 +253,7 @@ footer {
 @media screen and (min-width: 400px) {
     #title-text {
         #title-main {
-            h1 {
+            #name {
                 font-size: 3rem;
             }
         }
@@ -306,6 +306,10 @@ footer {
 @media screen and (min-width: 1400px) {
     #title-text {
         #title-main {
+            #name {
+                font-size: 5rem;
+                width: 3em;
+            }
             img {
                 width: 18em;
             }

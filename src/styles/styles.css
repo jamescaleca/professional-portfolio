@@ -393,7 +393,7 @@ footer .professional-links img {
 }
 
 @media screen and (min-width: 400px) {
-  #title-text #title-main h1 {
+  #title-text #title-main #name {
     font-size: 3rem;
   }
   #skills {
@@ -430,6 +430,10 @@ footer .professional-links img {
 }
 
 @media screen and (min-width: 1400px) {
+  #title-text #title-main #name {
+    font-size: 5rem;
+    width: 3em;
+  }
   #title-text #title-main img {
     width: 18em;
   }
