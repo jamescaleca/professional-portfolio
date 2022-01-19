@@ -29,7 +29,7 @@ body {
     flex-direction: column;
     background-color: $color1;
     position: relative;
-    width: 100%;
+    // width: 100%;
     z-index: 999;
     padding: 0;
     height: auto;
@@ -40,7 +40,7 @@ body {
     // margin-left: .5em;
     #title-main {
         display: flex;
-        margin-top: 1em;
+        margin-top: 2em;
         // padding: .5rem .5rem;
         justify-content: space-around;
         // align-items: center;
@@ -271,7 +271,7 @@ footer {
 
 @media screen and (min-width: 400px) {
     #title-text {
-        margin-left: 2em;
+        // margin-left: 2em;
         #title-main {
             h1 {
                 font-size: 3rem;

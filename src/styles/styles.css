@@ -28,7 +28,6 @@ body {
           flex-direction: column;
   background-color: whitesmoke;
   position: relative;
-  width: 100%;
   z-index: 999;
   padding: 0;
   height: auto;
@@ -41,7 +40,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 1em;
+  margin-top: 2em;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-orient: horizontal;
@@ -394,9 +393,6 @@ footer .professional-links img {
 }
 
 @media screen and (min-width: 400px) {
-  #title-text {
-    margin-left: 2em;
-  }
   #title-text #title-main h1 {
     font-size: 3rem;
   }
