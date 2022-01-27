@@ -75,7 +75,7 @@ function Home() {
                         </ul>
                     </div>
                     <div id='skills-list-grid'>
-                        <div className='skills-three-columns'>
+                        <div className='skills-three-columns' id='skills-column1'>
                             <h2 className='skills-cat'>Languages</h2>
                             <ul className='list-style-none skills-list'>
                                 <li>JavaScript</li>
