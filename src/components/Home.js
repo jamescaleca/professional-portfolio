@@ -13,6 +13,7 @@ import EmailIcon from '../icons/email-icon.svg'
 import SelfPort from '../icons/it-me.jpg'
 import DiaryIcon from '../project-screenshots/diary-buddy.png'
 import BeerRecIcon from '../project-screenshots/beer-recipe.png'
+import RTVIcon from '../project-screenshots/RTV-screenshot.png'
 import PostThingIcon from '../project-screenshots/post-a-thing.png'
 
 import '../styles/styles.css'
@@ -115,9 +116,15 @@ function Home() {
                                 </label>
                             </li>
                             <li className='project-screenshot'>
+                                <h4>Rock the Vote</h4>
+                                <a href='https://rtv-heroku.herokuapp.com/'>
+                                    <img src={RTVIcon} alt='rtv'/>
+                                </a>
+                            </li>
+                            {/* <li className='project-screenshot'>
                                 <h4>Beer Recipe Finder</h4>
                                 <img src={BeerRecIcon} alt='beer-recipes' />
-                            </li>
+                            </li> */}
                             <li className='project-screenshot'>
                                 <h4>Item Poster</h4>
                                 <img src={PostThingIcon} alt='ugly-things' />
