@@ -12,7 +12,7 @@ import SassIcon from '../icons/sass-icon.svg'
 import EmailIcon from '../icons/email-icon.svg'
 import SelfPort from '../icons/it-me.jpg'
 import DiaryIcon from '../project-screenshots/diary-buddy.png'
-import BeerRecIcon from '../project-screenshots/beer-recipe.png'
+// import BeerRecIcon from '../project-screenshots/beer-recipe.png'
 import RTVIcon from '../project-screenshots/RTV-screenshot.png'
 import PostThingIcon from '../project-screenshots/post-a-thing.png'
 
