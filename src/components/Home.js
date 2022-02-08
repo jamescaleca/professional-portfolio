@@ -15,6 +15,7 @@ import DiaryIcon from '../project-screenshots/diary-buddy.png'
 // import BeerRecIcon from '../project-screenshots/beer-recipe.png'
 import RTVIcon from '../project-screenshots/RTV-screenshot.png'
 import PostThingIcon from '../project-screenshots/post-a-thing.png'
+import CovidAppIcon from '../project-screenshots/COVID-vax-to-case-screenshot.png'
 
 import '../styles/styles.css'
 
@@ -119,6 +120,12 @@ function Home() {
                                 <h4>Rock the Vote</h4>
                                 <a href='https://rtv-heroku.herokuapp.com/'>
                                     <img src={RTVIcon} alt='rtv'/>
+                                </a>
+                            </li>
+                            <li>
+                                <h4>Covid Vax-To-Case</h4>
+                                <a href='https://angry-goldstine-db1057.netlify.app/'>
+                                    <img src={CovidAppIcon} alt='covid-app' />
                                 </a>
                             </li>
                             {/* <li className='project-screenshot'>
