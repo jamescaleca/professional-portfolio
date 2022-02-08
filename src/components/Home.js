@@ -122,7 +122,7 @@ function Home() {
                                     <img src={RTVIcon} alt='rtv'/>
                                 </a>
                             </li>
-                            <li>
+                            <li className='project-screenshot'>
                                 <h4>Covid Vax-To-Case</h4>
                                 <a href='https://angry-goldstine-db1057.netlify.app/'>
                                     <img src={CovidAppIcon} alt='covid-app' />
