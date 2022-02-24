@@ -18,6 +18,41 @@ body {
   display: grid;
 }
 
+.skeleton {
+  -webkit-animation: skeleton-loading 1s linear infinite alternate;
+          animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@-webkit-keyframes skeleton-loading {
+  0% {
+    background-color: #a3b8c2;
+  }
+  100% {
+    background-color: #f0f3f5;
+  }
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: #a3b8c2;
+  }
+  100% {
+    background-color: #f0f3f5;
+  }
+}
+
+.skeleton-text {
+  width: 100%;
+  height: .5rem;
+  margin-bottom: .25rem;
+  border-radius: .125rem;
+}
+
+.skeleton-text:last-child {
+  margin-bottom: 0;
+  width: 80%;
+}
+
 #title-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,6 +69,8 @@ body {
   -webkit-box-align: space-around;
       -ms-flex-align: space-around;
           align-items: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 #title-text #title-main {
@@ -62,16 +99,17 @@ body {
   font-size: 2.5rem;
 }
 
-#title-text #title-main img {
+#title-text #title-main .self-port {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
   right: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: auto;
-  width: 9em;
+  width: 12em;
   margin-right: 20px;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
 }
 
 #title-text #title-subtitle {
@@ -412,8 +450,8 @@ footer .professional-links img {
 }
 
 @media screen and (min-width: 770px) {
-  #title-text #title-main img {
-    width: 13em;
+  #title-text #title-main .self-port {
+    width: 15em;
   }
   #skills .skills-icons #skills-icon-list {
     gap: 1.5em .5em;
@@ -435,8 +473,8 @@ footer .professional-links img {
     font-size: 5rem;
     width: 3em;
   }
-  #title-text #title-main img {
-    width: 18em;
+  #title-text #title-main .self-port {
+    width: 22em;
   }
   #skills .skills-icons #skills-icon-list {
     gap: .5em .5em;

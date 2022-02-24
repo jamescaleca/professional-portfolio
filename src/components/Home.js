@@ -10,11 +10,12 @@ import VsIcon from '../icons/vscode-icon.svg'
 import NodeIcon from '../icons/node-icon.svg'
 import SassIcon from '../icons/sass-icon.svg'
 import EmailIcon from '../icons/email-icon.svg'
-import SelfPort from '../icons/it-me.jpg'
+import SelfPort from '../icons/it-me2.jpg'
 import DiaryIcon from '../project-screenshots/diary-buddy.png'
+import BudgetIcon from '../project-screenshots/budget-app.png'
 // import BeerRecIcon from '../project-screenshots/beer-recipe.png'
 import RTVIcon from '../project-screenshots/RTV-screenshot.png'
-import PostThingIcon from '../project-screenshots/post-a-thing.png'
+// import PostThingIcon from '../project-screenshots/post-a-thing.png'
 import CovidAppIcon from '../project-screenshots/COVID-vax-to-case-screenshot.png'
 
 import '../styles/styles.css'
@@ -28,7 +29,7 @@ function Home() {
                 <div id='title-text'>
                     <div id='title-main'>
                         <h1 id='name'>JAMES CALECA</h1>
-                        <img src={SelfPort} alt='me-img' />
+                        <img className='self-port' src={SelfPort} alt='me-img' />
                     </div>
                     <div id='title-subtitle'>
                         <h2>Full-Stack Web Developer</h2>
@@ -108,33 +109,31 @@ function Home() {
                         </div>
                         <ul id='projects-list' className='list-style-none'>
                             <li className='project-screenshot'>
+                                <h4>Budget App</h4>
+                                <a href='https://tender-borg-29ac3b.netlify.app/' target="_blank" rel="noopener noreferrer">
+                                    <img src={BudgetIcon} alt='budget-app'/>
+                                </a>
+                            </li>
+                            <li className='project-screenshot'>
                                 <h4>Diary Buddy</h4>
-                                <a href='https://diarybuddy.herokuapp.com/'>
+                                <a href='https://diarybuddy.herokuapp.com/' target="_blank" rel="noopener noreferrer">
                                     <img src={DiaryIcon} alt='diary-buddy'/>
                                 </a>
                                 <label htmlFor='diary-buddy'>
-                                    Created by James Caleca and <a href='https://www.nyjiascott.com'>Nyjia Scott</a>
+                                    Created by James Caleca and <a href='https://www.nyjiascott.com' target="_blank" rel="noopener noreferrer">Nyjia Scott</a>
                                 </label>
                             </li>
                             <li className='project-screenshot'>
                                 <h4>Rock the Vote</h4>
-                                <a href='https://rtv-heroku.herokuapp.com/'>
+                                <a href='https://rtv-heroku.herokuapp.com/' target="_blank" rel="noopener noreferrer">
                                     <img src={RTVIcon} alt='rtv'/>
                                 </a>
                             </li>
                             <li className='project-screenshot'>
                                 <h4>Covid Vax-To-Case</h4>
-                                <a href='https://angry-goldstine-db1057.netlify.app/'>
+                                <a href='https://angry-goldstine-db1057.netlify.app/' target="_blank" rel="noopener noreferrer">
                                     <img src={CovidAppIcon} alt='covid-app' />
                                 </a>
-                            </li>
-                            {/* <li className='project-screenshot'>
-                                <h4>Beer Recipe Finder</h4>
-                                <img src={BeerRecIcon} alt='beer-recipes' />
-                            </li> */}
-                            <li className='project-screenshot'>
-                                <h4>Item Poster</h4>
-                                <img src={PostThingIcon} alt='ugly-things' />
                             </li>
                         </ul>
                     </div>
@@ -158,7 +157,6 @@ function Home() {
                         <span className='tooltiptext'>E-mail</span>
                         <a href='mailto:jacaleca2@gmail.com'><img src={EmailIcon} alt='email'/></a>
                     </li>
-                    
                 </ul>
             </footer>
         </>
