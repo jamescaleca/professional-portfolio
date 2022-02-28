@@ -80,7 +80,6 @@ body {
             margin-right: 20px;
             // flex-shrink: 1;
         }
-        
     }
     #title-subtitle {
         display: flex;
@@ -102,66 +101,66 @@ body {
     }
 }
 
-    #skills {
+#skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $color2;
+    color: $color1;
+    width: 100%;
+    .skills-icons {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: $color2;
-        color: $color1;
-        width: 100%;
-        .skills-icons {
+        .skills-header {
             display: flex;
-            flex-direction: column;
             justify-content: center;
-            .skills-header {
-                display: flex;
-                justify-content: center;
-                margin-top: 1.3em;
-            }
-            #skills-icon-list {
-                padding: 0;
-                display: flex;
-                flex-flow: row wrap;
-                gap: 2em .5em;
-                justify-content: space-evenly;
-                align-content: space-between;
-                margin-bottom: 3em;
-                img {
-                    filter: invert(99%) sepia(0%) saturate(244%) hue-rotate(78deg) brightness(115%) contrast(92%);
-                    height: 4em;
-                    width: auto;
-                    margin-left: 10px;
-                    margin-right: 10px;
-                }
-            }
+            margin-top: 1.3em;
         }
-        #skills-list-grid {
-            display: grid;
-            justify-content: center;
-            grid-template-columns: 1fr 1fr 1fr;
-            .skills-three-columns {
-                display: grid;
-                grid-template-rows: .3fr 1fr;
-                justify-content: center;
-                height: 15em;
-                .skills-cat {
-                    font-size: 1.2em;
-                }
-                .skills-list {
-                    display: grid;
-                    grid-template-rows: 1fr 1fr 1fr;
-                    justify-content: center;
-                    text-align: center;
-                    padding: 0;
-                    margin-bottom: 1.3em;
-                }
-            }
-            #skills-column2,
-            #skills-column3 {
-                border-left: 1px solid whitesmoke;
+        #skills-icon-list {
+            padding: 0;
+            display: flex;
+            flex-flow: row wrap;
+            gap: 2em .5em;
+            justify-content: space-evenly;
+            align-content: space-between;
+            margin-bottom: 3em;
+            img {
+                filter: invert(99%) sepia(0%) saturate(244%) hue-rotate(78deg) brightness(115%) contrast(92%);
+                height: 4em;
+                width: auto;
+                margin-left: 10px;
+                margin-right: 10px;
             }
         }
     }
+    #skills-list-grid {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        .skills-three-columns {
+            display: grid;
+            grid-template-rows: .3fr 1fr;
+            justify-content: center;
+            height: 15em;
+            .skills-cat {
+                font-size: 1.2em;
+            }
+            .skills-list {
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr;
+                justify-content: center;
+                text-align: center;
+                padding: 0;
+                margin-bottom: 1.3em;
+            }
+        }
+        #skills-column2,
+        #skills-column3 {
+            border-left: 1px solid whitesmoke;
+        }
+    }
+}
 
 
 #projects {
@@ -315,7 +314,9 @@ footer {
     }
     #projects {
         #projects-list {
-            padding: 1em;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
             .project-screenshot {
                 img {
                     margin-left: 1em;
@@ -355,7 +356,7 @@ footer {
     #projects {
         #projects-list {
             flex-direction: row;
-            justify-content: space-between ;
+            justify-content: space-around;
         }
     }
     footer {
