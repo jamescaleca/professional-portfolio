@@ -107,27 +107,29 @@ function Home() {
                             <a href='https://tender-borg-29ac3b.netlify.app/' target="_blank" rel="noopener noreferrer">
                                 <img src={BudgetIcon} alt='budget-app'/>
                             </a>
-                        </li>
+                            <label htmlFor='budget-app'>Compiled a simple budget application that allows users to track their spending with multiple budget categories.</label>
+                        </li><hr />
                         <li className='project-screenshot'>
                             <h4>Diary Buddy</h4>
                             <a href='https://diarybuddy.herokuapp.com/' target="_blank" rel="noopener noreferrer">
                                 <img src={DiaryIcon} alt='diary-buddy'/>
                             </a>
                             <label htmlFor='diary-buddy'>
-                                Created by James Caleca and <a href='https://www.nyjiascott.com' target="_blank" rel="noopener noreferrer">Nyjia Scott</a>
-                            </label>
-                        </li>
+                            Collaborated with <a href='https://www.nyjiascott.com' target="_blank" rel="noopener noreferrer">Nyjia Scott</a> for an application that allows users to submit diary entries, either from a blank entry page or by choosing from a list of changing templates so they can write entries based on those prompts.</label>
+                        </li><hr />
                         <li className='project-screenshot'>
                             <h4>Rock the Vote</h4>
                             <a href='https://rtv-heroku.herokuapp.com/' target="_blank" rel="noopener noreferrer">
                                 <img src={RTVIcon} alt='rtv'/>
                             </a>
-                        </li>
+                            <label htmlFor='rtv'>Developed a website that allows users to create an account, post about politically-related issues, and upvote/downvote posts (similar to Reddit).</label>
+                        </li><hr />
                         <li className='project-screenshot'>
                             <h4>Covid Vax-To-Case</h4>
                             <a href='https://angry-goldstine-db1057.netlify.app/' target="_blank" rel="noopener noreferrer">
                                 <img src={CovidAppIcon} alt='covid-app' />
                             </a>
+                            <label htmlFor='covid-app'>Engineered an app, using three APIs (Google Maps, COVID Act Now, OpenDataSoft), that allows users to see COVID vaccination data and compare them to case numbers in each state and county across the USA. Vaccination data is illustrated using a Google heat map.</label>
                         </li>
                     </ul>
                 </div>
