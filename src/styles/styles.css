@@ -75,7 +75,7 @@ h2 {
           align-items: space-around;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-bottom: 1.3em;
+  padding-bottom: 1.3em;
 }
 
 #title-text #title-main {
@@ -488,6 +488,8 @@ footer .professional-links img {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-column-gap: 8em;
+            column-gap: 8em;
   }
   #projects #projects-list hr {
     display: none;

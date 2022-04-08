@@ -62,7 +62,7 @@ h2 {
     height: auto;
     align-items: space-around;
     justify-content: space-around;
-    margin-bottom: 1.3em;
+    padding-bottom: 1.3em;
     #title-main {
         display: flex;
         margin-top: 2em;
@@ -374,6 +374,7 @@ footer {
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-around;
+            column-gap: 8em;
             hr {
                 display: none;
             }
