@@ -103,33 +103,64 @@ function Home() {
                     </div>
                     <ul id='projects-list' className='list-style-none'>
                         <li className='project-screenshot'>
-                            <h4>Covid Vax-To-Case</h4>
+                            <h4><a href='https://angry-goldstine-db1057.netlify.app/' target="_blank" rel="noopener noreferrer">Covid Vax-To-Case</a></h4>
                             <a href='https://angry-goldstine-db1057.netlify.app/' target="_blank" rel="noopener noreferrer">
                                 <img src={CovidAppIcon} alt='covid-app' />
                             </a>
                             <label htmlFor='covid-app'>Engineered an app, using three APIs (Google Maps, COVID Act Now, OpenDataSoft), that allows users to see COVID vaccination data and compare them to case numbers in each state and county across the USA. Vaccination data is illustrated using a Google heat map.</label>
+                            <label htmlFor='covid-app'>
+                                <a 
+                                    href='https://github.com/jamescaleca/covid-vax-to-case' target="_blank" 
+                                    rel="noopener noreferrer"
+                                >View the code on Github
+                                </a>
+                            </label>
                         </li><hr />
                         <li className='project-screenshot'>
-                            <h4>Diary Buddy</h4>
+                            <h4><a href='https://diarybuddy.herokuapp.com/' target="_blank" rel="noopener noreferrer">Diary Buddy</a></h4>
                             <a href='https://diarybuddy.herokuapp.com/' target="_blank" rel="noopener noreferrer">
                                 <img src={DiaryIcon} alt='diary-buddy'/>
                             </a>
                             <label htmlFor='diary-buddy'>
                             Collaborated with <a href='https://www.nyjiascott.com' target="_blank" rel="noopener noreferrer">Nyjia Scott</a> for an application that allows users to submit diary entries, either from a blank entry page or by choosing from a list of changing templates so they can write entries based on those prompts.</label>
+                            <label htmlFor='diary-buddy'>
+                                <a 
+                                    href='https://github.com/jamescaleca/diary-buddy-heroku'
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                >View the code on Github
+                                </a>
+                            </label>
                         </li><hr />
                         <li className='project-screenshot'>
-                            <h4>Rock the Vote</h4>
+                            <h4><a href='https://rtv-heroku.herokuapp.com/' target="_blank" rel="noopener noreferrer">Rock the Vote</a></h4>
                             <a href='https://rtv-heroku.herokuapp.com/' target="_blank" rel="noopener noreferrer">
                                 <img src={RTVIcon} alt='rtv'/>
                             </a>
                             <label htmlFor='rtv'>Developed a website that allows users to create an account, post about politically-related issues, and upvote/downvote posts (similar to Reddit).</label>
+                            <label htmlFor='rtv'>
+                                <a 
+                                    href='https://github.com/jamescaleca/rtv-heroku' 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                >View the code on Github
+                                </a>
+                            </label>
                         </li>
                         <li className='project-screenshot'>
-                            <h4>Budget App</h4>
+                            <h4><a href='https://tender-borg-29ac3b.netlify.app/' target="_blank" rel="noopener noreferrer">Budget App</a></h4>
                             <a href='https://tender-borg-29ac3b.netlify.app/' target="_blank" rel="noopener noreferrer">
                                 <img src={BudgetIcon} alt='budget-app'/>
                             </a>
                             <label htmlFor='budget-app'>Compiled a simple budget application that allows users to track their spending with multiple budget categories.</label>
+                            <label htmlFor='budget-app'>
+                                <a 
+                                    href='https://github.com/jamescaleca/budget-app' 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                >View the code on Github
+                                </a>
+                            </label>
                         </li><hr />
                     </ul>
                 </div>
