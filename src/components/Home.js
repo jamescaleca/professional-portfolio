@@ -9,12 +9,13 @@ import VsIcon from '../icons/vscode-icon.svg'
 import NodeIcon from '../icons/node-icon.svg'
 import SassIcon from '../icons/sass-icon.svg'
 import EmailIcon from '../icons/email-icon.svg'
+import FileIcon from '../icons/file-icon.svg'
 import SelfPort from '../icons/it-me2.jpg'
 import DiaryIcon from '../project-screenshots/diary-buddy.png'
-import BudgetIcon from '../project-screenshots/budget-app.png'
 import RTVIcon from '../project-screenshots/RTV-screenshot.png'
 import CovidAppIcon from '../project-screenshots/COVID-vax-to-case-screenshot.png'
-
+import OPVetIcon from '../project-screenshots/op-vet.png'
+import Resume from '../pdfs/James-Caleca-Resume.pdf'
 import '../styles/styles.css'
 
 function Home() {
@@ -107,10 +108,27 @@ function Home() {
                             <a href='https://angry-goldstine-db1057.netlify.app/' target="_blank" rel="noopener noreferrer">
                                 <img src={CovidAppIcon} alt='covid-app' />
                             </a>
-                            <label htmlFor='covid-app'>Engineered an app, using three APIs (Google Maps, COVID Act Now, OpenDataSoft), that allows users to see COVID vaccination data and compare them to case numbers in each state and county across the USA. Vaccination data is illustrated using a Google heat map.</label>
+                            <label htmlFor='covid-app'>Engineered an app, using three APIs, that allows users to see COVID vaccination data and compare them to case numbers in each state and county across the USA. Vaccination data is illustrated using a Google heat map.</label>
+                            <label htmlFor='covid-app'>SKILLS USED: React.js, APIs (Google Maps, COVID Act Now, OpenDataSoft)</label>
                             <label htmlFor='covid-app'>
                                 <a 
                                     href='https://github.com/jamescaleca/covid-vax-to-case' target="_blank" 
+                                    rel="noopener noreferrer"
+                                >View the code on Github
+                                </a>
+                            </label>
+                        </li><hr />
+                        <li className='project-screenshot'>
+                            <h4><a href='https://op-veterans-dev.web.app/' target="_blank" rel="noopener noreferrer">OP Vetfest</a></h4>
+                            <a href='https://op-veterans-dev.web.app/' target="_blank" rel="noopener noreferrer">
+                                <img src={OPVetIcon} alt='op-vet'/>
+                            </a>
+                            <label htmlFor='op-vet'>Collaborated with a team of stage two developers and instructors from V School on a registration website for an event organized by <a href="https://www.opveteran.org/" target="_blank" rel="noopener noreferrer">OP Veteran</a>. Contributed work on the user interface, particularly on the booth registration page.</label>
+                            <label htmlFor='op-vet'>SKILLS USED: React.js, Firebase, Shopify</label>
+                            <label htmlFor='op-vet'>
+                                <a 
+                                    href='https://github.com/V-School-Module-7/op-veteran' 
+                                    target="_blank" 
                                     rel="noopener noreferrer"
                                 >View the code on Github
                                 </a>
@@ -123,6 +141,7 @@ function Home() {
                             </a>
                             <label htmlFor='diary-buddy'>
                             Collaborated with <a href='https://www.nyjiascott.com' target="_blank" rel="noopener noreferrer">Nyjia Scott</a> for an application that allows users to submit diary entries, either from a blank entry page or by choosing from a list of changing templates so they can write entries based on those prompts.</label>
+                            <label htmlFor='diary-buddy'>SKILLS USED: React.js, Express.js, MongoDB</label>
                             <label htmlFor='diary-buddy'>
                                 <a 
                                     href='https://github.com/jamescaleca/diary-buddy-heroku'
@@ -138,24 +157,10 @@ function Home() {
                                 <img src={RTVIcon} alt='rtv'/>
                             </a>
                             <label htmlFor='rtv'>Developed a website that allows users to create an account, post about politically-related issues, and upvote/downvote posts (similar to Reddit).</label>
+                            <label htmlFor='rtv'>SKILLS USED: React.js, Express.js, MongoDB, Mongoose Schemas</label>
                             <label htmlFor='rtv'>
                                 <a 
                                     href='https://github.com/jamescaleca/rtv-heroku' 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                >View the code on Github
-                                </a>
-                            </label>
-                        </li>
-                        <li className='project-screenshot'>
-                            <h4><a href='https://tender-borg-29ac3b.netlify.app/' target="_blank" rel="noopener noreferrer">Budget App</a></h4>
-                            <a href='https://tender-borg-29ac3b.netlify.app/' target="_blank" rel="noopener noreferrer">
-                                <img src={BudgetIcon} alt='budget-app'/>
-                            </a>
-                            <label htmlFor='budget-app'>Compiled a simple budget application that allows users to track their spending with multiple budget categories.</label>
-                            <label htmlFor='budget-app'>
-                                <a 
-                                    href='https://github.com/jamescaleca/budget-app' 
                                     target="_blank" 
                                     rel="noopener noreferrer"
                                 >View the code on Github
@@ -182,6 +187,12 @@ function Home() {
                     <li className='professional-link tooltip'>
                         <span className='tooltiptext'>E-mail</span>
                         <a href='mailto:jacaleca2@gmail.com'><img src={EmailIcon} alt='email'/></a>
+                    </li>
+                    <li className='professional-link tooltip'>
+                        <span className='tooltiptext'>Resume</span>
+                        <a href={Resume} target="_blank" rel="noopener noreferrer">
+                            <img src={FileIcon} alt='resume' />
+                        </a>
                     </li>
                 </ul>
             </footer>

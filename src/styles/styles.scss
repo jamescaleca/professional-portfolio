@@ -225,8 +225,8 @@ h2 {
                 font-size: 1.7rem;
             }
             img {
-                height: 15em;
-                width: 21em;
+                height: 90%;
+                width: 90%;
             }
             label {
                 font-size: .9em;
@@ -333,11 +333,18 @@ footer {
     }
     #projects {
         #projects-list {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            column-gap: 8em;
+            hr {
+                display: none;
+            }
             .project-screenshot {
-                img {
-                    margin-left: 1em;
-                    margin-right: 1em;
-                }
+                width: 30em;
+                margin-top: 0;
+                margin-bottom: 2em;
+                
             }
         }
     }
@@ -366,26 +373,6 @@ footer {
             #skills-icon-list {
                 gap: .5em .5em;
                 margin-bottom: 4em;
-            }
-        }
-    }
-    #projects {
-        #projects-list {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            column-gap: 8em;
-            hr {
-                display: none;
-            }
-            .project-screenshot {
-                width: 30em;
-                margin-top: 0;
-                margin-bottom: 2em;
-                img {
-                    height: 16em;
-                    width: 22.5em;
-                }
             }
         }
     }

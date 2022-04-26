@@ -16,6 +16,10 @@ h2 {
   font-size: 2rem;
 }
 
+b {
+  font-weight: 900;
+}
+
 .content-container {
   width: 100%;
   display: -ms-grid;
@@ -345,8 +349,8 @@ h2 {
 }
 
 #projects #projects-list .project-screenshot img {
-  height: 15em;
-  width: 21em;
+  height: 90%;
+  width: 90%;
 }
 
 #projects #projects-list .project-screenshot label {
@@ -458,27 +462,6 @@ footer .professional-links img {
   #skills .skills-icons #skills-icon-list {
     gap: 1.5em .5em;
   }
-  #projects #projects-list .project-screenshot img {
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-  footer .professional-links {
-    width: 80%;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  #title-text #title-main #name {
-    font-size: 5rem;
-    width: 3em;
-  }
-  #title-text #title-main .self-port {
-    width: 22em;
-  }
-  #skills .skills-icons #skills-icon-list {
-    gap: .5em .5em;
-    margin-bottom: 4em;
-  }
   #projects #projects-list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -499,9 +482,22 @@ footer .professional-links img {
     margin-top: 0;
     margin-bottom: 2em;
   }
-  #projects #projects-list .project-screenshot img {
-    height: 16em;
-    width: 22.5em;
+  footer .professional-links {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #title-text #title-main #name {
+    font-size: 5rem;
+    width: 3em;
+  }
+  #title-text #title-main .self-port {
+    width: 22em;
+  }
+  #skills .skills-icons #skills-icon-list {
+    gap: .5em .5em;
+    margin-bottom: 4em;
   }
   footer .professional-links {
     width: 70%;
