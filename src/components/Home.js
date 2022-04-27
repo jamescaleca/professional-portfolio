@@ -21,16 +21,16 @@ import '../styles/styles.css'
 function Home() {
     return (
         <>
-            <div id='title-text'>
+            <div id='title'>
+                <img id='self-port' src={SelfPort} alt='me-img' />
                 <div id='title-main'>
                     <h1 id='name'>JAMES CALECA</h1>
-                    <img className='self-port' src={SelfPort} alt='me-img' />
-                </div>
-                <div id='title-subtitle'>
-                    <h2>Full-Stack Web Developer</h2>
-                    <h3>Musician</h3>
-                    <h3>Cat Lover</h3>
-                    <h3>Video Game Enthusiast</h3>
+                    <div id='title-subtitle'>
+                        <h2>Full-Stack Web Developer</h2>
+                        <h3>Musician</h3>
+                        <h3>Cat Lover</h3>
+                        <h3>Video Game Enthusiast</h3>
+                    </div>
                 </div>
             </div>
             <div id='skills'>
