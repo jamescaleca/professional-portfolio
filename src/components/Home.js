@@ -10,6 +10,9 @@ import NodeIcon from '../icons/node-icon.svg'
 import SassIcon from '../icons/sass-icon.svg'
 import EmailIcon from '../icons/email-icon.svg'
 import FileIcon from '../icons/file-icon.svg'
+import CatIcon from '../icons/cat-solid.svg'
+import MusicIcon from '../icons/music-solid.svg'
+import GamePadIcon from '../icons/gamepad-solid.svg'
 import SelfPort from '../icons/it-me2.jpg'
 import DiaryIcon from '../project-screenshots/diary-buddy.png'
 import RTVIcon from '../project-screenshots/RTV-screenshot.png'
@@ -25,12 +28,21 @@ function Home() {
                 <img id='self-port' src={SelfPort} alt='me-img' />
                 <div id='title-main'>
                     <h1 id='name'>JAMES CALECA</h1>
-                    <div id='title-subtitle'>
-                        <h2>Full-Stack Web Developer</h2>
-                        <h3>Musician</h3>
-                        <h3>Cat Lover</h3>
-                        <h3>Video Game Enthusiast</h3>
-                    </div>
+                    <ul id='title-subtitle'>
+                        <li id='profession'>FULL-STACK WEB DEVELOPER</li>
+                        <li className='hobbies'>
+                            <img src={MusicIcon} alt='cat-icon'/>
+                            <span className='hobby-text'>MUSICIAN</span>
+                        </li>
+                        <li className='hobbies'>
+                            <img src={CatIcon} alt='cat-icon'/>
+                            <span className='hobby-text'>CAT DAD</span>
+                        </li>
+                        <li className='hobbies'>
+                            <img src={GamePadIcon} alt='cat-icon'/>
+                            <span className='hobby-text'>VIDEO GAME ENTHUSIAST</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div id='skills'>
