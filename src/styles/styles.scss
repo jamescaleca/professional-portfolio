@@ -90,9 +90,6 @@ h2 {
         #title-subtitle {
             list-style-type: none;
             width: auto;
-            // justify-content: space-evenly;
-            // align-items: center;
-            // flex-shrink: 1;
             margin-bottom: 1em;
             padding: 0;
             #profession {
@@ -301,7 +298,7 @@ footer {
 }
 
 @media screen and (min-width: 400px) {
-    #title-text {
+    #title {
         #title-main {
             #name {
                 font-size: 3rem;
@@ -320,14 +317,6 @@ footer {
 }
 
 @media screen and (min-width: 770px) {
-    #title-text {
-        #title-main{
-            .self-port {
-                width: 15em;
-            }
-        }
-    }
-    
     #skills {
         .skills-icons {
             #skills-icon-list {
@@ -360,14 +349,18 @@ footer {
 }
 
 @media screen and (min-width: 1400px) {
-    #title-text {
+    #title {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        padding: 6em 10em 6em 10em;
+        #self-port {
+            width: 30em;
+            margin: 0;
+        }
         #title-main {
+            width: 500px;
             #name {
                 font-size: 5rem;
-                width: 3em;
-            }
-            .self-port {
-                width: 22em;
             }
         }
     }

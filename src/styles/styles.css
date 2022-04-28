@@ -253,7 +253,7 @@ footer .professional-links img {
 }
 
 @media screen and (min-width: 400px) {
-  #title-text #title-main #name {
+  #title #title-main #name {
     font-size: 3rem;
   }
 
@@ -266,10 +266,6 @@ footer .professional-links img {
   }
 }
 @media screen and (min-width: 770px) {
-  #title-text #title-main .self-port {
-    width: 15em;
-  }
-
   #skills .skills-icons #skills-icon-list {
     gap: 1.5em 0.5em;
   }
@@ -295,12 +291,20 @@ footer .professional-links img {
   }
 }
 @media screen and (min-width: 1400px) {
-  #title-text #title-main #name {
-    font-size: 5rem;
-    width: 3em;
+  #title {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 6em 10em 6em 10em;
   }
-  #title-text #title-main .self-port {
-    width: 22em;
+  #title #self-port {
+    width: 30em;
+    margin: 0;
+  }
+  #title #title-main {
+    width: 500px;
+  }
+  #title #title-main #name {
+    font-size: 5rem;
   }
 
   #skills .skills-icons #skills-icon-list {
