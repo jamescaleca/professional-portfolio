@@ -109,78 +109,106 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <div className='content-container'>
-                <div id='projects'>
-                    <div id='projects-title'>
-                        <h2>Projects I've worked on</h2>
-                    </div>
-                    <ul id='projects-list' className='list-style-none'>
-                        <li className='project-screenshot'>
-                            <h4><a href='https://angry-goldstine-db1057.netlify.app/' target="_blank" rel="noopener noreferrer">Covid Vax-To-Case</a></h4>
-                            <a href='https://angry-goldstine-db1057.netlify.app/' target="_blank" rel="noopener noreferrer">
-                                <img src={CovidAppIcon} alt='covid-app' />
-                            </a>
-                            <label htmlFor='covid-app'>Engineered an app, using three APIs, that allows users to see COVID vaccination data and compare them to case numbers in each state and county across the USA. Vaccination data is illustrated using a Google heat map.</label>
-                            <label htmlFor='covid-app'>SKILLS USED: React.js, APIs (Google Maps, COVID Act Now, OpenDataSoft)</label>
-                            <label htmlFor='covid-app'>
-                                <a 
-                                    href='https://github.com/jamescaleca/covid-vax-to-case' target="_blank" 
-                                    rel="noopener noreferrer"
-                                >View the code on Github
-                                </a>
-                            </label>
-                        </li><hr />
-                        <li className='project-screenshot'>
-                            <h4><a href='https://op-veterans-dev.web.app/' target="_blank" rel="noopener noreferrer">OP Vetfest</a></h4>
-                            <a href='https://op-veterans-dev.web.app/' target="_blank" rel="noopener noreferrer">
-                                <img src={OPVetIcon} alt='op-vet'/>
-                            </a>
-                            <label htmlFor='op-vet'>Collaborated with a team of stage two developers and instructors from V School on a registration website for an event organized by <a href="https://www.opveteran.org/" target="_blank" rel="noopener noreferrer">OP Veteran</a>. Contributed work on the user interface, particularly on the booth registration page.</label>
-                            <label htmlFor='op-vet'>SKILLS USED: React.js, Firebase, Shopify</label>
-                            <label htmlFor='op-vet'>
-                                <a 
-                                    href='https://github.com/V-School-Module-7/op-veteran' 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                >View the code on Github
-                                </a>
-                            </label>
-                        </li><hr />
-                        <li className='project-screenshot'>
-                            <h4><a href='https://diarybuddy.herokuapp.com/' target="_blank" rel="noopener noreferrer">Diary Buddy</a></h4>
-                            <a href='https://diarybuddy.herokuapp.com/' target="_blank" rel="noopener noreferrer">
-                                <img src={DiaryIcon} alt='diary-buddy'/>
-                            </a>
-                            <label htmlFor='diary-buddy'>
-                            Collaborated with <a href='https://www.nyjiascott.com' target="_blank" rel="noopener noreferrer">Nyjia Scott</a> for an application that allows users to submit diary entries, either from a blank entry page or by choosing from a list of changing templates so they can write entries based on those prompts.</label>
-                            <label htmlFor='diary-buddy'>SKILLS USED: React.js, Express.js, MongoDB</label>
-                            <label htmlFor='diary-buddy'>
-                                <a 
-                                    href='https://github.com/jamescaleca/diary-buddy-heroku'
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                >View the code on Github
-                                </a>
-                            </label>
-                        </li><hr />
-                        <li className='project-screenshot'>
-                            <h4><a href='https://rtv-heroku.herokuapp.com/' target="_blank" rel="noopener noreferrer">Rock the Vote</a></h4>
-                            <a href='https://rtv-heroku.herokuapp.com/' target="_blank" rel="noopener noreferrer">
-                                <img src={RTVIcon} alt='rtv'/>
-                            </a>
-                            <label htmlFor='rtv'>Developed a website that allows users to create an account, post about politically-related issues, and upvote/downvote posts (similar to Reddit).</label>
-                            <label htmlFor='rtv'>SKILLS USED: React.js, Express.js, MongoDB, Mongoose Schemas</label>
-                            <label htmlFor='rtv'>
-                                <a 
-                                    href='https://github.com/jamescaleca/rtv-heroku' 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                >View the code on Github
-                                </a>
-                            </label>
-                        </li><hr />
-                    </ul>
+            <div id='projects'>
+                <div id='projects-title'>
+                    <h2>Projects I've worked on</h2>
                 </div>
+                <ul id='projects-list' className='list-style-none'>
+                    <li className='project-screenshot'>
+                        <a href='https://angry-goldstine-db1057.netlify.app/' target="_blank" rel="noopener noreferrer">
+                            <img src={CovidAppIcon} alt='covid-app' />
+                        </a>
+                        <div>
+                            <span className="skills-span">SKILLS USED</span>
+                            <ul>
+                                <li>React.js</li>
+                                <li>Google Maps API</li>
+                                <li>COVID Act Now API</li>
+                                <li>OpenDataSoft API</li>
+                            </ul>
+                            <a href='https://angry-goldstine-db1057.netlify.app/' target="_blank" rel="noopener noreferrer" className="project-title">COVID VAX-TO-CASE</a>
+                            <label htmlFor='covid-app' className="project-description">Engineered an app, using three APIs, that allows users to see COVID vaccination data and compare them to case numbers in each state and county across the USA. Vaccination data is illustrated using a Google heat map.</label>
+                        </div>
+                        <span className="project-github">
+                            <a 
+                                href='https://github.com/jamescaleca/covid-vax-to-case' target="_blank" 
+                                rel="noopener noreferrer"
+                            ><img src={GithubIcon} alt='proj-git'/>View on Github
+                            </a>
+                        </span>
+                    </li>
+                    <li className='project-screenshot'>
+                        <a href='https://op-veterans-dev.web.app/' target="_blank" rel="noopener noreferrer">
+                            <img src={OPVetIcon} alt='op-vet'/>
+                        </a>
+                        <div>
+                            <span className="skills-span">SKILLS USED</span>
+                            <ul>
+                                <li>React.js</li>
+                                <li>Firebase</li>
+                                <li>Shopify</li>
+                            </ul>
+                            <a href='https://op-veterans-dev.web.app/' target="_blank" rel="noopener noreferrer" className="project-title">OP VETFEST</a>
+                            <label htmlFor='op-vet' className="project-description">Collaborated with a team of stage two developers and instructors from V School on a registration website for an event organized by <a href="https://www.opveteran.org/" target="_blank" rel="noopener noreferrer">OP Veteran</a>. Contributed work on the user interface, particularly on the booth registration page.</label>
+                        </div>
+                        <span className="project-github">
+                            <a 
+                                href='https://github.com/V-School-Module-7/op-veteran' 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                            ><img src={GithubIcon} alt='proj-git'/>View on Github
+                            </a>
+                        </span>
+                    </li>
+                    <li className='project-screenshot'>
+                        <a href='https://diarybuddy.herokuapp.com/' target="_blank" rel="noopener noreferrer">
+                            <img src={DiaryIcon} alt='diary-buddy'/>
+                        </a>
+                        <div>
+                            <span className="skills-span">SKILLS USED</span>
+                            <ul>
+                                <li>React.js</li>
+                                <li>Express.js</li>
+                                <li>MongoDB</li>
+                            </ul>
+                            <a href='https://diarybuddy.herokuapp.com/' target="_blank" rel="noopener noreferrer" className="project-title">DIARY BUDDY</a>
+                            <label htmlFor='diary-buddy' className="project-description">
+                            Collaborated with <a href='https://www.nyjiascott.com' target="_blank" rel="noopener noreferrer">Nyjia Scott</a> for an application that allows users to submit diary entries, either from a blank entry page or by choosing from a list of changing templates so they can write entries based on those prompts.</label>
+                        </div>
+                        <span className="project-github">
+                            <a 
+                                href='https://github.com/jamescaleca/diary-buddy-heroku'
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                            ><img src={GithubIcon} alt='proj-git'/>View on Github
+                            </a>
+                        </span>
+                    </li>
+                    <li className='project-screenshot'>
+                        <a href='https://rtv-heroku.herokuapp.com/' target="_blank" rel="noopener noreferrer">
+                            <img src={RTVIcon} alt='rtv'/>
+                        </a>
+                        <div>
+                            <span className="skills-span">SKILLS USED</span>
+                            <ul>
+                                <li>React.js</li>
+                                <li>Express.js</li>
+                                <li>MongoDB</li>
+                                <li>Mongoose Schemas</li>
+                            </ul>
+                            <a href='https://rtv-heroku.herokuapp.com/' target="_blank" rel="noopener noreferrer" className="project-title">ROCK THE VOTE</a>
+                            <label htmlFor='rtv' className="project-description">Developed a website that allows users to create an account, post about politically-related issues, and upvote/downvote posts (similar to Reddit).</label>
+                        </div>
+                        <span className="project-github">
+                            <a 
+                                href='https://github.com/jamescaleca/rtv-heroku' 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                            ><img src={GithubIcon} alt='proj-git'/>View on Github
+                            </a>
+                        </span>
+                    </li>
+                </ul>
             </div>
             <footer>
                 <ul className='professional-links list-style-none'>
