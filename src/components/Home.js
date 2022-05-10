@@ -226,7 +226,9 @@ function Home() {
                     </li>
                     <li className='professional-link tooltip'>
                         <span className='tooltiptext'>E-mail</span>
-                        <a href='mailto:jacaleca2@gmail.com'><img src={EmailIcon} alt='email'/></a>
+                        <a href='mailto:jacaleca2@gmail.com'>
+                            <img src={EmailIcon} alt='email'/>
+                        </a>
                     </li>
                     <li className='professional-link tooltip'>
                         <span className='tooltiptext'>Resume</span>
