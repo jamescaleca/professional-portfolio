@@ -115,29 +115,6 @@ function Home() {
                 </div>
                 <ul id='projects-list' className='list-style-none'>
                     <li className='project-screenshot'>
-                        <a href='https://angry-goldstine-db1057.netlify.app/' target="_blank" rel="noopener noreferrer">
-                            <img src={CovidAppIcon} alt='covid-app' />
-                        </a>
-                        <div>
-                            <span className="skills-span">SKILLS USED</span>
-                            <ul>
-                                <li>React.js</li>
-                                <li>Google Maps API</li>
-                                <li>COVID Act Now API</li>
-                                <li>OpenDataSoft API</li>
-                            </ul>
-                            <a href='https://angry-goldstine-db1057.netlify.app/' target="_blank" rel="noopener noreferrer" className="project-title">COVID VAX-TO-CASE</a>
-                            <label htmlFor='covid-app' className="project-description">Engineered an app, using three APIs, that allows users to see COVID vaccination data and compare them to case numbers in each state and county across the USA. Vaccination data is illustrated using a Google heat map.</label>
-                        </div>
-                        <span className="project-github">
-                            <a 
-                                href='https://github.com/jamescaleca/covid-vax-to-case' target="_blank" 
-                                rel="noopener noreferrer"
-                            ><img src={GithubIcon} alt='proj-git'/>View on Github
-                            </a>
-                        </span>
-                    </li>
-                    <li className='project-screenshot'>
                         <a href='https://op-veterans-dev.web.app/' target="_blank" rel="noopener noreferrer">
                             <img src={OPVetIcon} alt='op-vet'/>
                         </a>
@@ -203,6 +180,29 @@ function Home() {
                             <a 
                                 href='https://github.com/jamescaleca/rtv-heroku' 
                                 target="_blank" 
+                                rel="noopener noreferrer"
+                            ><img src={GithubIcon} alt='proj-git'/>View on Github
+                            </a>
+                        </span>
+                    </li>
+                    <li className='project-screenshot'>
+                        <a href='https://angry-goldstine-db1057.netlify.app/' target="_blank" rel="noopener noreferrer">
+                            <img src={CovidAppIcon} alt='covid-app' />
+                        </a>
+                        <div>
+                            <span className="skills-span">SKILLS USED</span>
+                            <ul>
+                                <li>React.js</li>
+                                <li>Google Maps API</li>
+                                <li>COVID Act Now API</li>
+                                <li>OpenDataSoft API</li>
+                            </ul>
+                            <a href='https://angry-goldstine-db1057.netlify.app/' target="_blank" rel="noopener noreferrer" className="project-title">COVID VAX-TO-CASE</a>
+                            <label htmlFor='covid-app' className="project-description">Engineered an app, using three APIs, that allows users to see COVID vaccination data and compare them to case numbers in each state and county across the USA. Vaccination data is illustrated using a Google heat map.</label>
+                        </div>
+                        <span className="project-github">
+                            <a 
+                                href='https://github.com/jamescaleca/covid-vax-to-case' target="_blank" 
                                 rel="noopener noreferrer"
                             ><img src={GithubIcon} alt='proj-git'/>View on Github
                             </a>
