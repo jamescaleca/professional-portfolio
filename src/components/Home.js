@@ -43,6 +43,12 @@ function Home() {
                             <span className='hobby-text'>VIDEO GAME ENTHUSIAST</span>
                         </li>
                     </ul>
+                    <div id='about-me'>
+                        <h2>A little about me</h2>
+                        <p>Front-end web developer, teaching assistant, and recent graduate of the Full-Stack JavaScript program at Utah-based V School, working on making it my career. Experienced in: JavaScript, React.js, Node.js, HTML, CSS, AJAX, JSON, APIs, MongoDB, and Express. I love to learn, I love to help people, and I would love to do both with a career in development.</p>
+                            
+                        <p>I have a great passion for music - listening to it, practicing my electric bass and guitar, and dabbling in music production. I am the caretaker of three incredible cats. And I am a lifelong lover of video games, as well as all art in general.</p>
+                    </div>
                 </div>
             </div>
             <div id='skills'>
@@ -126,7 +132,7 @@ function Home() {
                                 <li>Shopify</li>
                             </ul>
                             <a href='https://op-veterans-dev.web.app/' target="_blank" rel="noopener noreferrer" className="project-title">OP VETFEST</a>
-                            <label htmlFor='op-vet' className="project-description">Collaborated with a team of stage two developers and instructors from V School on a registration website for an event organized by <a href="https://www.opveteran.org/" target="_blank" rel="noopener noreferrer">OP Veteran</a>. Contributed work on the user interface, particularly on the booth registration page.</label>
+                            <label htmlFor='op-vet' className="project-description">Collaborated with a team of stage two developers and instructors from V School on a registration website for an event organized by <a href="https://www.opveteran.org/" target="_blank" rel="noopener noreferrer">OP Veteran</a>. Contributed work on the user interface, including the booth registration page, displaying local and Shopify cart information, and design aspects of the sidebar.</label>
                         </div>
                         <span className="project-github">
                             <a 
@@ -150,7 +156,7 @@ function Home() {
                             </ul>
                             <a href='https://diarybuddy.herokuapp.com/' target="_blank" rel="noopener noreferrer" className="project-title">DIARY BUDDY</a>
                             <label htmlFor='diary-buddy' className="project-description">
-                            Collaborated with <a href='https://www.nyjiascott.com' target="_blank" rel="noopener noreferrer">Nyjia Scott</a> for an application that allows users to submit diary entries, either from a blank entry page or by choosing from a list of changing templates so they can write entries based on those prompts.</label>
+                            Collaborated with <a href='https://www.nyjiascott.com' target="_blank" rel="noopener noreferrer">Nyjia Scott</a> for an application that allows users to submit diary entries, either from a blank entry page or by choosing from a list of changing templates so they can write entries based on those prompts. I worked on much of the functionality, including adding user functionality, the search bar, and the ability to add, delete, and edit entries.</label>
                         </div>
                         <span className="project-github">
                             <a 
@@ -174,7 +180,7 @@ function Home() {
                                 <li>Mongoose Schemas</li>
                             </ul>
                             <a href='https://rtv-heroku.herokuapp.com/' target="_blank" rel="noopener noreferrer" className="project-title">ROCK THE VOTE</a>
-                            <label htmlFor='rtv' className="project-description">Developed a website that allows users to create an account, post about politically-related issues, and upvote/downvote posts (similar to Reddit).</label>
+                            <label htmlFor='rtv' className="project-description">Developed a website that allows users to create an account, post about politically-related issues, and upvote/downvote posts (similar to Reddit). This is one of my solo projects and was a study in creating a combination front-end and back-end application, so this gave me plenty of experience with creating Mongoose schemas and sub-schemas.</label>
                         </div>
                         <span className="project-github">
                             <a 
@@ -198,7 +204,7 @@ function Home() {
                                 <li>OpenDataSoft API</li>
                             </ul>
                             <a href='https://angry-goldstine-db1057.netlify.app/' target="_blank" rel="noopener noreferrer" className="project-title">COVID VAX-TO-CASE</a>
-                            <label htmlFor='covid-app' className="project-description">Engineered an app, using three APIs, that allows users to see COVID vaccination data and compare them to case numbers in each state and county across the USA. Vaccination data is illustrated using a Google heat map.</label>
+                            <label htmlFor='covid-app' className="project-description">Another one of my solo projects. Engineered an app, using three APIs, that allows users to see COVID vaccination data and compare them to case numbers in each state and county across the USA. Vaccination data is illustrated using a Google heat map. This gave me excellent experience with visualizing daily-updated API data.</label>
                         </div>
                         <span className="project-github">
                             <a 
