@@ -99,6 +99,9 @@ header nav ul li a img {
   height: 2.5em;
   width: auto;
 }
+header nav ul li a img:hover {
+  filter: invert(0%) sepia(100%) saturate(5%) hue-rotate(100deg) brightness(103%) contrast(100%);
+}
 header nav ul li a:hover {
   color: #000;
 }

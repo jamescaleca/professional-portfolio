@@ -112,10 +112,14 @@ header {
                     text-transform: uppercase;
                     opacity: 0;
                     transition: opacity 150ms ease-in-out;
+
                     img {
                         filter: invert(99%) sepia(0%) saturate(244%) hue-rotate(78deg) brightness(115%) contrast(92%);
                         height: 2.5em;
                         width: auto;
+                        &:hover {
+                            filter: invert(0%) sepia(100%) saturate(5%) hue-rotate(100deg) brightness(103%) contrast(100%);
+                        }
                     }
                 }
                 
