@@ -1,5 +1,5 @@
 import React from 'react'
-import LinkedinIcon from '../icons/linkedin-icon.svg'
+import Navbar from './Navbar'
 import GithubIcon from '../icons/github-icon.svg'
 import ReactIcon from '../icons/react-icon.svg'
 import JsIcon from '../icons/js-icon.svg'
@@ -8,8 +8,7 @@ import CssIcon from '../icons/css3-icon.svg'
 import VsIcon from '../icons/vscode-icon.svg'
 import NodeIcon from '../icons/node-icon.svg'
 import SassIcon from '../icons/sass-icon.svg'
-import EmailIcon from '../icons/email-icon.svg'
-import FileIcon from '../icons/file-icon.svg'
+import UpArrowIcon from '../icons/arrow-up-solid.svg'
 import CatIcon from '../icons/cat-solid.svg'
 import MusicIcon from '../icons/music-solid.svg'
 import GamePadIcon from '../icons/gamepad-solid.svg'
@@ -18,12 +17,12 @@ import DiaryIcon from '../project-screenshots/diary-buddy.png'
 import RTVIcon from '../project-screenshots/RTV-screenshot.png'
 import CovidAppIcon from '../project-screenshots/COVID-vax-to-case-screenshot.png'
 import OPVetIcon from '../project-screenshots/op-vet.png'
-import Resume from '../pdfs/James-Caleca-Resume.pdf'
 import '../styles/styles.css'
 
 function Home() {
     return (
         <>
+            <Navbar />
             <div id='title'>
                 <img id='self-port' src={SelfPort} alt='me-img' />
                 <div id='title-main'>
@@ -44,7 +43,7 @@ function Home() {
                         </li>
                     </ul>
                     <div id='about-me'>
-                        <h2>A little about me</h2>
+                        <h2>A LITTLE ABOUT ME</h2>
                         <p>Front-end web developer, teaching assistant, and recent graduate of the Full-Stack JavaScript program at Utah-based V School, working on making it my career. Experienced in: JavaScript, React.js, Node.js, HTML, CSS, AJAX, JSON, APIs, MongoDB, and Express. I love to learn, I love to help people, and I would love to do both with a career in development.</p>
                             
                         <p>I have a great passion for music - listening to it, practicing my electric bass and guitar, and dabbling in music production. I am the caretaker of three incredible cats. And I am a lifelong lover of video games, as well as all art in general.</p>
@@ -53,7 +52,7 @@ function Home() {
             </div>
             <div id='skills'>
                 <div className='skills-icons'>
-                    <h2 className='skills-header'>Skills</h2>
+                    <h2 className='skills-header'>SKILLS</h2>
                     <ul className='list-style-none' id='skills-icon-list'>
                         <li className='tooltip'>
                             <span className='tooltiptext'>React</span>
@@ -91,7 +90,7 @@ function Home() {
                 </div>
                 <div id='skills-list-grid'>
                     <div className='skills-three-columns' id='skills-column1'>
-                        <h2 className='skills-cat'>Languages</h2>
+                        <h2 className='skills-cat'>LANGUAGES</h2>
                         <ul className='list-style-none skills-list'>
                             <li>JavaScript</li>
                             <li>HTML5</li>
@@ -99,14 +98,14 @@ function Home() {
                         </ul>
                     </div>
                     <div className='skills-three-columns' id='skills-column2'>
-                        <h2 className='skills-cat'>Frameworks</h2>
+                        <h2 className='skills-cat'>FRAMEWORKS</h2>
                         <ul className='list-style-none skills-list'>
                             <li>React.js</li>
                             <li>Node.js</li>
                         </ul>
                     </div>
                     <div className='skills-three-columns' id='skills-column3'>
-                        <h2 className='skills-cat'>Database</h2>
+                        <h2 className='skills-cat'>DATABASE</h2>
                         <ul className='list-style-none skills-list'>
                             <li>MongoDB</li>
                             <li>Express.js</li>
@@ -117,7 +116,7 @@ function Home() {
             </div>
             <div id='projects'>
                 <div id='projects-title'>
-                    <h2>Projects I've worked on</h2>
+                    <h2>PROJECTS I'VE WORKED ON</h2>
                 </div>
                 <ul id='projects-list' className='list-style-none'>
                     <li className='project-screenshot'>
@@ -215,35 +214,10 @@ function Home() {
                         </span>
                     </li>
                 </ul>
+                <a id="top-link" href="#top">
+                    <img src={UpArrowIcon} alt="up-arrow"></img><p>BACK TO TOP</p>
+                </a>
             </div>
-            <footer>
-                <ul className='professional-links list-style-none'>
-                    <li className='professional-link tooltip'>
-                        <span className='tooltiptext'>LinkedIn</span>
-                        <a href="https://www.linkedin.com/in/james-caleca/" target="_blank" rel="noopener noreferrer">
-                            <img src={LinkedinIcon} alt='linkedin'/>
-                        </a>
-                    </li>
-                    <li className='professional-link tooltip'>
-                        <span className='tooltiptext'>Github</span>
-                        <a href="https://github.com/jamescaleca" target="_blank" rel="noopener noreferrer">
-                            <img src={GithubIcon} alt='github'/>
-                        </a>
-                    </li>
-                    <li className='professional-link tooltip'>
-                        <span className='tooltiptext'>E-mail</span>
-                        <a href='mailto:jacaleca2@gmail.com'>
-                            <img src={EmailIcon} alt='email'/>
-                        </a>
-                    </li>
-                    <li className='professional-link tooltip'>
-                        <span className='tooltiptext'>Resume</span>
-                        <a href={Resume} target="_blank" rel="noopener noreferrer">
-                            <img src={FileIcon} alt='resume' />
-                        </a>
-                    </li>
-                </ul>
-            </footer>
         </>
     )
 }
