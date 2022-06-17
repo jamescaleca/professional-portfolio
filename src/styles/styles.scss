@@ -514,7 +514,39 @@ footer {
     
 }
 
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 770px) {    
+    #skills {
+        .skills-icons {
+            #skills-icon-list {
+                gap: 1.5em .5em;
+            }
+        }
+    }
+    #projects {
+        #projects-list {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            column-gap: 8em;
+            hr {
+                display: none;
+            }
+            .project-screenshot {
+                width: 30em;
+                margin-top: 0;
+                margin-bottom: 2em;
+                
+            }
+        }
+    }
+    footer {
+        .professional-links {
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (min-width: 1400px) {
     header {
         display: grid;
         grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
@@ -571,39 +603,6 @@ footer {
             }
         }
     }
-    
-    #skills {
-        .skills-icons {
-            #skills-icon-list {
-                gap: 1.5em .5em;
-            }
-        }
-    }
-    #projects {
-        #projects-list {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            column-gap: 8em;
-            hr {
-                display: none;
-            }
-            .project-screenshot {
-                width: 30em;
-                margin-top: 0;
-                margin-bottom: 2em;
-                
-            }
-        }
-    }
-    footer {
-        .professional-links {
-            width: 80%;
-        }
-    }
-}
-
-@media screen and (min-width: 1400px) {
     #title {
         flex-direction: row-reverse;
         justify-content: space-around;

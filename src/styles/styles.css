@@ -474,6 +474,31 @@ footer .professional-links img {
   }
 }
 @media screen and (min-width: 770px) {
+  #skills .skills-icons #skills-icon-list {
+    gap: 1.5em 0.5em;
+  }
+
+  #projects #projects-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    -moz-column-gap: 8em;
+         column-gap: 8em;
+  }
+  #projects #projects-list hr {
+    display: none;
+  }
+  #projects #projects-list .project-screenshot {
+    width: 30em;
+    margin-top: 0;
+    margin-bottom: 2em;
+  }
+
+  footer .professional-links {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1400px) {
   header {
     display: grid;
     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
@@ -526,31 +551,6 @@ footer .professional-links img {
     transform: scale(1, 1);
   }
 
-  #skills .skills-icons #skills-icon-list {
-    gap: 1.5em 0.5em;
-  }
-
-  #projects #projects-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    -moz-column-gap: 8em;
-         column-gap: 8em;
-  }
-  #projects #projects-list hr {
-    display: none;
-  }
-  #projects #projects-list .project-screenshot {
-    width: 30em;
-    margin-top: 0;
-    margin-bottom: 2em;
-  }
-
-  footer .professional-links {
-    width: 80%;
-  }
-}
-@media screen and (min-width: 1400px) {
   #title {
     flex-direction: row-reverse;
     justify-content: space-around;
