@@ -105,6 +105,7 @@ function Home() {
                     <div className='skills-three-columns' id='skills-column2'>
                         <h2 className='skills-cat'>FRAMEWORKS</h2>
                         <ul className='list-style-none skills-list'>
+                            <li>Next.js</li>
                             <li>React.js</li>
                             <li>Node.js</li>
                         </ul>
