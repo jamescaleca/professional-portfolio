@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import GithubIcon from '../icons/github-icon.svg'
+import NextJsIcon from '../icons/nextjs-icon-svgrepo-com.svg'
 import ReactIcon from '../icons/react-icon.svg'
 import JsIcon from '../icons/js-icon.svg'
 import HtmlIcon from '../icons/html5-icon.svg'
@@ -54,6 +55,10 @@ function Home() {
                 <div className='skills-icons'>
                     <h2 className='skills-header'>SKILLS</h2>
                     <ul className='list-style-none' id='skills-icon-list'>
+                        <li className='tooltip'>
+                            <span className='tooltiptext'>Next.js</span>
+                            <img src={NextJsIcon} alt='next-js' />
+                        </li>
                         <li className='tooltip'>
                             <span className='tooltiptext'>React</span>
                             <img src={ReactIcon} alt='react' />
