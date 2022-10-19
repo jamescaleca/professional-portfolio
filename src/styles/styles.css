@@ -251,7 +251,6 @@ h2 {
 #skills #skills-list-grid #skills-column2,
 #skills #skills-list-grid #skills-column3 {
   border-left: 1px solid whitesmoke;
-  height: 85%;
 }
 
 #projects {
@@ -464,7 +463,6 @@ footer .professional-links img {
   #title #title-main #name {
     font-size: 3rem;
   }
-
   #skills {
     grid-template-rows: auto 15em;
   }
@@ -477,7 +475,6 @@ footer .professional-links img {
   #skills .skills-icons #skills-icon-list {
     gap: 1.5em 0.5em;
   }
-
   #projects #projects-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -493,7 +490,6 @@ footer .professional-links img {
     margin-top: 0;
     margin-bottom: 2em;
   }
-
   footer .professional-links {
     width: 80%;
   }
@@ -550,7 +546,6 @@ footer .professional-links img {
   header nav ul li a:hover::before {
     transform: scale(1, 1);
   }
-
   #title {
     flex-direction: row-reverse;
     justify-content: space-around;
@@ -566,16 +561,13 @@ footer .professional-links img {
   #title #title-main #name {
     font-size: 5rem;
   }
-
   #skills .skills-icons #skills-icon-list {
     gap: 0.5em 0.5em;
     margin-bottom: 4em;
   }
-
   #projects #projects-list .project-screenshot {
     width: 700px;
   }
-
   footer .professional-links {
     width: 50%;
   }
