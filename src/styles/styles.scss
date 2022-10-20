@@ -183,20 +183,23 @@ h2 {
             width: auto;
             margin-bottom: 1em;
             padding: 0;
-            #profession {
+            .profession {
                 font-size: 1.1rem;
                 color:rgb(118, 118, 118);
                 letter-spacing: .2em;
                 margin-bottom: 1em;
             }
-            .hobbies {
-                display: flex;
-                margin-bottom: 25px;
-                align-items: center;
-                img {
-                    height: auto;
-                    width: 25px;
-                    margin-right: 12px;
+            .hobbies-section {
+                margin-top: 2em;
+                .hobby {
+                    display: flex;
+                    margin-bottom: 25px;
+                    align-items: center;
+                    img {
+                        height: auto;
+                        width: 25px;
+                        margin-right: 12px;
+                    }
                 }
             }
         }

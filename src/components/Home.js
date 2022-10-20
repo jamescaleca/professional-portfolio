@@ -30,19 +30,22 @@ function Home() {
                 <div id='title-main'>
                     <h1 id='name'>JAMES CALECA</h1>
                     <ul id='title-subtitle'>
-                        <li id='profession'>FULL-STACK WEB DEVELOPER</li>
-                        <li className='hobbies'>
-                            <img src={MusicIcon} alt='cat-icon'/>
-                            <span className='hobby-text'>MUSICIAN</span>
-                        </li>
-                        <li className='hobbies'>
-                            <img src={CatIcon} alt='cat-icon'/>
-                            <span className='hobby-text'>CAT DAD</span>
-                        </li>
-                        <li className='hobbies'>
-                            <img src={GamePadIcon} alt='cat-icon'/>
-                            <span className='hobby-text'>VIDEO GAME ENTHUSIAST</span>
-                        </li>
+                        <li className='profession'>FULL-STACK WEB DEVELOPER</li>
+                        <li className='profession'>INSTRUCTOR - V SCHOOL</li>
+                        <div className='hobbies-section'>
+                            <li className='hobby'>
+                                <img src={MusicIcon} alt='cat-icon'/>
+                                <span className='hobby-text'>MUSICIAN</span>
+                            </li>
+                            <li className='hobby'>
+                                <img src={CatIcon} alt='cat-icon'/>
+                                <span className='hobby-text'>CAT DAD</span>
+                            </li>
+                            <li className='hobby'>
+                                <img src={GamePadIcon} alt='cat-icon'/>
+                                <span className='hobby-text'>VIDEO GAME ENTHUSIAST</span>
+                            </li>
+                        </div>
                     </ul>
                     <div id='about-me'>
                         <h2>A LITTLE ABOUT ME</h2>
