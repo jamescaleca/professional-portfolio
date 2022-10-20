@@ -6,6 +6,7 @@ import ReactIcon from '../icons/react-icon.svg'
 import JsIcon from '../icons/js-icon.svg'
 import HtmlIcon from '../icons/html5-icon.svg'
 import CssIcon from '../icons/css3-icon.svg'
+import TailwindIcon from '../icons/tailwind.svg'
 import VsIcon from '../icons/vscode-icon.svg'
 import NodeIcon from '../icons/node-icon.svg'
 import SassIcon from '../icons/sass-icon.svg'
@@ -45,7 +46,7 @@ function Home() {
                     </ul>
                     <div id='about-me'>
                         <h2>A LITTLE ABOUT ME</h2>
-                        <p>Front-end web developer. Instructor at Utah-based V School. Experienced in: JavaScript, Next.js React.js, Node.js, HTML, CSS, AJAX, JSON, APIs, MongoDB, and Express. I love to learn, I love to help people, and I am thrilled that I get to do both of those things for my career.</p>
+                        <p>Front-end web developer. Instructor at Utah-based V School. Experienced in: JavaScript, Next.js React.js, Node.js, HTML, CSS, Tailwind, AJAX, JSON, APIs, MongoDB, and Express. I love to learn, I love to help people, and I am thrilled that I get to do both of those things for my career.</p>
                             
                         <p>I have a great passion for music - listening to it, practicing my electric bass and guitar, and dabbling in music production. I am the caretaker of two incredible cats. And I am a lifelong lover of video games, as well as all art in general.</p>
                     </div>
@@ -79,6 +80,11 @@ function Home() {
                             <span className='tooltiptext'>CSS3</span>
                             <img src={CssIcon} alt='css3' />
                         </li>
+                        <li className='tooltip'>
+                            <span className='tooltiptext'>Tailwind</span>
+                            <img src={TailwindIcon} alt='tailwind' />
+                        </li>
+                        
                         <li className='tooltip'>
                             <span className='tooltiptext'>Github</span>
                             <img src={GithubIcon} alt='github' />
