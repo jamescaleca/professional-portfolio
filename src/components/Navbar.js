@@ -4,7 +4,7 @@ import LinkedinIcon from '../icons/linkedin-icon.svg'
 import GithubIcon from '../icons/github-icon.svg'
 import EmailIcon from '../icons/email-icon.svg'
 import FileIcon from '../icons/file-icon.svg'
-import Resume from '../pdfs/James-Caleca-Resume.pdf'
+import Resume from '../pdfs/James-Caleca-Resume-General.pdf'
 import '../styles/styles.css'
 
 function Navbar() {

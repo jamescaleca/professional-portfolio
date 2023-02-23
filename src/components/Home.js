@@ -31,7 +31,6 @@ function Home() {
                     <h1 id='name'>JAMES CALECA</h1>
                     <ul id='title-subtitle'>
                         <li className='profession'>FULL-STACK WEB DEVELOPER</li>
-                        <li className='profession'>INSTRUCTOR - V SCHOOL</li>
                         <div className='hobbies-section'>
                             <li className='hobby'>
                                 <img src={MusicIcon} alt='cat-icon'/>
@@ -49,7 +48,7 @@ function Home() {
                     </ul>
                     <div id='about-me'>
                         <h2>A LITTLE ABOUT ME</h2>
-                        <p>Front-end web developer. Instructor at Utah-based V School. Experienced in: JavaScript, Next.js React.js, Node.js, HTML, CSS, Tailwind, AJAX, JSON, APIs, MongoDB, and Express. I love to learn, I love to help people, and I am thrilled that I get to do both of those things for my career.</p>
+                        <p>Full-stack web developer. Experienced in: JavaScript, Next.js React.js, Node.js, HTML, CSS, Tailwind, AJAX, JSON, APIs, MongoDB, and Express. I love to learn, I love to help people, and I am thrilled that I get to do both of those things for my career.</p>
                             
                         <p>I have a great passion for music - listening to it, practicing my electric bass and guitar, and dabbling in music production. I am the caretaker of two incredible cats. And I am a lifelong lover of video games, as well as all art in general.</p>
                     </div>
