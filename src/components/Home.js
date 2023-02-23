@@ -50,7 +50,7 @@ function Home() {
                         <h2>A LITTLE ABOUT ME</h2>
                         <p>Full-stack web developer. Experienced in: JavaScript, Next.js React.js, Node.js, HTML, CSS, Tailwind, AJAX, JSON, APIs, MongoDB, and Express. I love to learn, I love to help people, and I am thrilled that I get to do both of those things for my career.</p>
                             
-                        <p>I have a great passion for music - listening to it, practicing my electric bass and guitar, and dabbling in music production. I am the caretaker of two incredible cats. And I am a lifelong lover of video games, as well as all art in general.</p>
+                        <p>I have a great passion for music - listening to it, practicing my electric bass and guitar, and dabbling in music production. I am the caregiver of two incredible cats. And I am a lifelong lover of video games, as well as all art in general.</p>
                     </div>
                 </div>
             </div>
