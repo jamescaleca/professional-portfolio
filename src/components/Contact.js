@@ -43,20 +43,16 @@ function Contact() {
     //         .catch(err => console.log(err))
     // }
 
-    // console.log(process.env)
-
-    // console.log(`${process.env.PUBLIC_KEY} ${process.env.SERVICE_ID} ${process.env.TEMPLATE_ID}`)
-
     const form = useRef();
 
     const sendEmail = (e) => {
       e.preventDefault();
   
       emailjs.sendForm(
-            `${process.env.SERVICE_ID}`, 
-            `${process.env.TEMPLATE_ID}`, 
+            `${process.env.REACT_APP_SERVICE_ID}`, 
+            `${process.env.REACT_APP_TEMPLATE_ID}`, 
             form.current, 
-            `${process.env.PUBLIC_KEY}`
+            `${process.env.REACT_APP_PUBLIC_KEY}`
         )
         .then((result) => {
             console.log(result.text);
