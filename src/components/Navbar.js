@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Logo from "../icons/logo3.png"
 import LinkedinIcon from '../icons/linkedin-icon.svg'
 import GithubIcon from '../icons/github-icon.svg'
@@ -41,6 +42,7 @@ function Navbar() {
                         <a href='mailto:jacaleca2@gmail.com'>
                             <img src={EmailIcon} alt='email'/>
                         </a>
+                        {/* <Link to="/contact">Contact Me</Link> */}
                     </li>
                     <li className='professional-link tooltip'>
                         <span className='tooltiptext'>Resume</span>
