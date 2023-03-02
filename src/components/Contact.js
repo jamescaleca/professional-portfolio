@@ -43,6 +43,10 @@ function Contact() {
     //         .catch(err => console.log(err))
     // }
 
+    console.log(process.env)
+
+    console.log(`${process.env.PUBLIC_KEY} ${process.env.SERVICE_ID} ${process.env.TEMPLATE_ID}`)
+
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -57,7 +61,8 @@ function Contact() {
         .then((result) => {
             console.log(result.text);
         }, (error) => {
-            console.log(error.text);
+            console.log(error.text, process.env.PUBLIC_KEY)
+            
         });
     };
 
