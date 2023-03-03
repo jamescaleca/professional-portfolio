@@ -28,7 +28,6 @@ function Contact() {
             <div className="login-container">
               <h1 className="login-title">Get in contact with me</h1>
               <form className="form" ref={form} onSubmit={sendEmail}>
-
                 <div className="input-group">
                   <label for="user_name">Name</label>
                   <input type="text" name="user_name" id="user_name"/>
