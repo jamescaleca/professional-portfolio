@@ -1,5 +1,6 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Navbar from './Navbar'
+import Contact from './Contact'
 import GithubIcon from '../icons/github-icon.svg'
 import NextJsIcon from '../icons/nextjs-icon-svgrepo-com.svg'
 import ReactIcon from '../icons/react-icon.svg'
@@ -22,9 +23,19 @@ import OPVetIcon from '../project-screenshots/op-vet.png'
 import '../styles/styles.css'
 
 function Home() {
+    const [modal, setModal] = useState(false)
+
+    const toggleModal = () => {setModal(!modal)}
+
+    if(modal) {
+        document.body.classList.add('active-modal')
+    } else {
+        document.body.classList.remove('active-modal')
+    }
     return (
         <>
-            <Navbar />
+            <Navbar toggleModal={toggleModal} />
+
             <div id='title'>
                 <img id='self-port' src={SelfPort} alt='me-img' />
                 <div id='title-main'>
@@ -54,6 +65,7 @@ function Home() {
                     </div>
                 </div>
             </div>
+            {modal && (<Contact toggleModal={toggleModal} />)}
             <div id='skills'>
                 <div className='skills-icons'>
                     <h2 className='skills-header'>SKILLS</h2>

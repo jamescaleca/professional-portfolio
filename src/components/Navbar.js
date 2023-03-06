@@ -1,18 +1,18 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
 import Logo from "../icons/logo3.png"
 import LinkedinIcon from '../icons/linkedin-icon.svg'
 import GithubIcon from '../icons/github-icon.svg'
-import EmailIcon from '../icons/email-icon.svg'
+// import EmailIcon from '../icons/email-icon.svg'
 import FileIcon from '../icons/file-icon.svg'
 import Resume from '../pdfs/James-Caleca-Resume-General.pdf'
 import '../styles/styles.css'
 
-function Navbar() {
+function Navbar({toggleModal}) {
     return (
         <header>
             <img className="logo" src={Logo} alt="logo"></img>
             <input type="checkbox" id="nav-toggle" className="nav-toggle"></input>
+            
             <nav>
                 <ul>
                     <li className="active">
@@ -38,17 +38,15 @@ function Navbar() {
                         </a>
                     </li>
                     <li className='professional-link tooltip'>
-                        <span className='tooltiptext'>E-mail</span>
-                        <a href='mailto:jacaleca2@gmail.com'>
-                            <img src={EmailIcon} alt='email'/>
-                        </a>
-                        {/* <Link to="/contact">Contact Me</Link> */}
-                    </li>
-                    <li className='professional-link tooltip'>
                         <span className='tooltiptext'>Resume</span>
                         <a href={Resume} target="_blank" rel="noopener noreferrer">
                             <img src={FileIcon} alt='resume' />
                         </a>
+                    </li>
+                    <li className='professional-link tooltip'>
+                        <button onClick={toggleModal} className='contact-me'>
+                            Contact Me
+                        </button>
                     </li>
                 </ul>
             </nav>
