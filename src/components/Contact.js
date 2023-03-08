@@ -6,13 +6,14 @@ function Contact({toggleModal}) {
     const form = useRef()
 
     const [sent, setSent] = useState(false)
-    const [email, setEmail] = useState('')
+
+    const [name, setName] = useState('')
+    // const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
     // const [error, setError] = useState(null)
 
-    // const [values, setValues] = useState({ email: "" })
+    const [values, setValues] = useState({ email: "" })
     const [errors, setErrors] = useState({})
-
-    const toggleSent = () => {setSent(!sent)}
 
     const isEmail = (email) => {
       /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email)
@@ -20,34 +21,34 @@ function Contact({toggleModal}) {
 
     const sendEmail = (e) => {
       e.preventDefault()
-
+      
       const errors = {}
+      const toggleSent = () => {setSent(!sent)}
 
-      if (!isEmail(email)) {
+      if (!isEmail(values.email)) {
         errors.email = "Wrong email format"
       }
    
       setErrors(errors)
-
-      setEmail(email)
    
       if (!Object.keys(errors).length) {
-        alert(JSON.stringify(email, null, 2))
+        alert(JSON.stringify(values.email, null, 2))
       }
-  
-      emailjs.sendForm(
-        `${process.env.REACT_APP_SERVICE_ID}`, 
-        `${process.env.REACT_APP_TEMPLATE_ID}`, 
-        form.current, 
-        `${process.env.REACT_APP_PUBLIC_KEY}`
-      )
-        .then((result) => {
-          console.log(result.text)
-        }, (error) => {
-          console.log(error.text)
-        })
 
-
+      
+        emailjs.sendForm(
+          `${process.env.REACT_APP_SERVICE_ID}`, 
+          `${process.env.REACT_APP_TEMPLATE_ID}`, 
+          form.current, 
+          `${process.env.REACT_APP_PUBLIC_KEY}`
+        )
+          .then((result) => {
+            console.log(result.text)
+          }, (error) => {
+            console.log(error.text)
+          })
+          toggleSent()
+      
     }
 
     // const validateEmail = (inputText) => {
@@ -64,9 +65,9 @@ function Contact({toggleModal}) {
     // }
 
    
-    // const setEmailValue = (e) => {
-    //   setValues((values) => ({ ...values, email: e.target.value }))
-    // }
+    const setEmailValue = (e) => {
+      setValues((values) => ({ ...values, email: e.target.value }))
+    }
 
     // const handleChange = (event) => {
     //   if (!isValidEmail(event.target.value)) {
@@ -95,7 +96,16 @@ function Contact({toggleModal}) {
 
                     <div className="input-group">
                       <label htmlFor="user_name">Name</label>
-                      <input type="text" name="user_name" id="user_name"/>
+                      <input 
+                        type="text" 
+                        name="user_name" 
+                        id="user_name" 
+                        value={name} 
+                        onChange={(event) => { 
+                          setName(event.target.value)
+                        }}
+                        required
+                      />
                     </div>
 
                     <div className="input-group">
@@ -104,6 +114,8 @@ function Contact({toggleModal}) {
                         id="email" 
                         type="text" 
                         name="user_email" 
+                        value={values.email}
+                        onChange={setEmailValue}
                         required
                       /> {" "}
                       {/* {error && <h2 style={{color: 'red'}}>{error}</h2>} */}
@@ -124,7 +136,13 @@ function Contact({toggleModal}) {
 
                     <div className="input-group">
                       <label htmlFor='message' >Message</label>
-                      <textarea name="message" />
+                      <textarea 
+                        name="message" 
+                        value={message}
+                        onChange={(event) => {
+                          setMessage(event.target.value)
+                        }}
+                      />
                       <input className="send-button" type="submit" value="Send" />
                     </div>
 
