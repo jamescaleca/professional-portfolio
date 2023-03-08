@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import Navbar from './Navbar'
 import Contact from './Contact'
 import GithubIcon from '../icons/github-icon.svg'
@@ -32,6 +32,7 @@ function Home() {
     } else {
         document.body.classList.remove('active-modal')
     }
+    
     return (
         <>
             <Navbar toggleModal={toggleModal} />
@@ -65,7 +66,9 @@ function Home() {
                     </div>
                 </div>
             </div>
+
             {modal && (<Contact toggleModal={toggleModal} />)}
+            
             <div id='skills'>
                 <div className='skills-icons'>
                     <h2 className='skills-header'>SKILLS</h2>

@@ -6,25 +6,77 @@ function Contact({toggleModal}) {
     const form = useRef()
 
     const [sent, setSent] = useState(false)
+    const [email, setEmail] = useState('')
+    // const [error, setError] = useState(null)
+
+    // const [values, setValues] = useState({ email: "" })
+    const [errors, setErrors] = useState({})
 
     const toggleSent = () => {setSent(!sent)}
 
+    const isEmail = (email) => {
+      /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email)
+    }
+
     const sendEmail = (e) => {
       e.preventDefault()
+
+      const errors = {}
+
+      if (!isEmail(email)) {
+        errors.email = "Wrong email format"
+      }
+   
+      setErrors(errors)
+
+      setEmail(email)
+   
+      if (!Object.keys(errors).length) {
+        alert(JSON.stringify(email, null, 2))
+      }
   
       emailjs.sendForm(
-            `${process.env.REACT_APP_SERVICE_ID}`, 
-            `${process.env.REACT_APP_TEMPLATE_ID}`, 
-            form.current, 
-            `${process.env.REACT_APP_PUBLIC_KEY}`
-        )
+        `${process.env.REACT_APP_SERVICE_ID}`, 
+        `${process.env.REACT_APP_TEMPLATE_ID}`, 
+        form.current, 
+        `${process.env.REACT_APP_PUBLIC_KEY}`
+      )
         .then((result) => {
-            console.log(result.text)
+          console.log(result.text)
         }, (error) => {
-            console.log(error.text)
-            
+          console.log(error.text)
         })
-    };
+
+
+    }
+
+    // const validateEmail = (inputText) => {
+    //   const mailFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    //   if(inputText.value.match(mailFormat)){
+    //     alert("Valid email address!")
+    //     document.form1.text1.focus()
+    //     return true
+    //   } else {
+    //     alert("You have entered an invalid email address!")
+    //     document.form1.text1.focus()
+    //     return false
+    //   }
+    // }
+
+   
+    // const setEmailValue = (e) => {
+    //   setValues((values) => ({ ...values, email: e.target.value }))
+    // }
+
+    // const handleChange = (event) => {
+    //   if (!isValidEmail(event.target.value)) {
+    //     setError('Email is invalid')
+    //   } else {
+    //     setError(null)
+    //   }
+  
+    //   setEmail(event.target.value)
+    // }
 
     return (
         <>
@@ -40,22 +92,42 @@ function Contact({toggleModal}) {
                 <div className="modal-content">
                   <h1 className="login-title">Contact Me:</h1>
                   <form className="form" ref={form} onSubmit={sendEmail}>
+
                     <div className="input-group">
-                      <label for="user_name">Name</label>
+                      <label htmlFor="user_name">Name</label>
                       <input type="text" name="user_name" id="user_name"/>
                     </div>
 
                     <div className="input-group">
-                      <label for="user_email">Email</label>
-                      <input type="email" name="user_email" />
+                      <label htmlFor="user_email">Email</label>
+                      <input 
+                        id="email" 
+                        type="text" 
+                        name="user_email" 
+                        required
+                      /> {" "}
+                      {/* {error && <h2 style={{color: 'red'}}>{error}</h2>} */}
                       {/* <span className="msg">Valid email</span> */}
                     </div>
 
+                    {Object.entries(errors).map(([key, error]) => (
+                      <span
+                        key={`${key}: ${error}`}
+                        style={{
+                          fontWeight: "bold",
+                          color: "red"
+                        }}
+                      >
+                        {error}
+                      </span>
+                    ))}
+
                     <div className="input-group">
-                      <label>Message</label>
+                      <label htmlFor='message' >Message</label>
                       <textarea name="message" />
-                      <input onClick={toggleSent} className="send-button" type="submit" value="Send" />
+                      <input className="send-button" type="submit" value="Send" />
                     </div>
+
                   </form>
                 </div>
               )}

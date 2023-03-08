@@ -393,7 +393,7 @@ h2 {
 }
 #skills .skills-icons #skills-icon-list img {
   filter: invert(99%) sepia(0%) saturate(244%) hue-rotate(78deg) brightness(115%) contrast(92%);
-  height: 4em;
+  height: 4.5em;
   width: auto;
   margin-left: 10px;
   margin-right: 10px;
