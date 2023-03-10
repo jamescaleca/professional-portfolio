@@ -8,76 +8,26 @@ function Contact({toggleModal}) {
     const [sent, setSent] = useState(false)
 
     const [name, setName] = useState('')
-    // const [email, setEmail] = useState('')
+    const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
-    // const [error, setError] = useState(null)
-
-    const [values, setValues] = useState({ email: "" })
-    const [errors, setErrors] = useState({})
-
-    const isEmail = (email) => {
-      /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email)
-    }
-
+    
     const sendEmail = (e) => {
       e.preventDefault()
-      
-      const errors = {}
       const toggleSent = () => {setSent(!sent)}
 
-      if (!isEmail(values.email)) {
-        errors.email = "Wrong email format"
-      }
-   
-      setErrors(errors)
-   
-      if (!Object.keys(errors).length) {
-        alert(JSON.stringify(values.email, null, 2))
-      }
-
-      
-        emailjs.sendForm(
-          `${process.env.REACT_APP_SERVICE_ID}`, 
-          `${process.env.REACT_APP_TEMPLATE_ID}`, 
-          form.current, 
-          `${process.env.REACT_APP_PUBLIC_KEY}`
-        )
-          .then((result) => {
-            console.log(result.text)
-          }, (error) => {
-            console.log(error.text)
-          })
-          toggleSent()
-      
+      emailjs.sendForm(
+        `${process.env.REACT_APP_SERVICE_ID}`, 
+        `${process.env.REACT_APP_TEMPLATE_ID}`, 
+        form.current, 
+        `${process.env.REACT_APP_PUBLIC_KEY}`
+      )
+        .then((result) => {
+          console.log(result.text)
+        }, (error) => {
+          console.log(error.text)
+        })
+        toggleSent()
     }
-
-    // const validateEmail = (inputText) => {
-    //   const mailFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    //   if(inputText.value.match(mailFormat)){
-    //     alert("Valid email address!")
-    //     document.form1.text1.focus()
-    //     return true
-    //   } else {
-    //     alert("You have entered an invalid email address!")
-    //     document.form1.text1.focus()
-    //     return false
-    //   }
-    // }
-
-   
-    const setEmailValue = (e) => {
-      setValues((values) => ({ ...values, email: e.target.value }))
-    }
-
-    // const handleChange = (event) => {
-    //   if (!isValidEmail(event.target.value)) {
-    //     setError('Email is invalid')
-    //   } else {
-    //     setError(null)
-    //   }
-  
-    //   setEmail(event.target.value)
-    // }
 
     return (
         <>
@@ -112,27 +62,15 @@ function Contact({toggleModal}) {
                       <label htmlFor="user_email">Email</label>
                       <input 
                         id="email" 
-                        type="text" 
+                        type="email" 
                         name="user_email" 
-                        value={values.email}
-                        onChange={setEmailValue}
-                        required
-                      /> {" "}
-                      {/* {error && <h2 style={{color: 'red'}}>{error}</h2>} */}
-                      {/* <span className="msg">Valid email</span> */}
-                    </div>
-
-                    {Object.entries(errors).map(([key, error]) => (
-                      <span
-                        key={`${key}: ${error}`}
-                        style={{
-                          fontWeight: "bold",
-                          color: "red"
+                        value={email}
+                        onChange={(event) => {
+                          setEmail(event.target.value)
                         }}
-                      >
-                        {error}
-                      </span>
-                    ))}
+                        required
+                      />
+                    </div>
 
                     <div className="input-group">
                       <label htmlFor='message' >Message</label>
@@ -142,6 +80,7 @@ function Contact({toggleModal}) {
                         onChange={(event) => {
                           setMessage(event.target.value)
                         }}
+                        required
                       />
                       <input className="send-button" type="submit" value="Send" />
                     </div>
