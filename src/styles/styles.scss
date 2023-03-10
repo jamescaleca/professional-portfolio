@@ -33,7 +33,7 @@ body {
 header {
     background: $background;
     text-align: center;
-    position: relative;
+    position: fixed;
     width: 100%;
     z-index: 9990;
 
@@ -330,7 +330,6 @@ h2 {
     background-color: $color1;
     position: relative;
     // z-index: 0;
-    padding: 0;
     height: auto;
     align-items: center;
     padding-bottom: 1.3em;
@@ -349,6 +348,7 @@ h2 {
         align-items: flex-start;
         margin-left: 1rem;
         margin-right: 1rem;
+        margin-top: 50px;
         #name {
             display: flex;
             position: relative;
@@ -682,6 +682,9 @@ footer {
 
 @media screen and (min-width: 400px) {
     #title {
+        #self-port {
+            margin-top: 100px;
+        }
         #title-main {
             #name {
                 font-size: 3rem;
@@ -700,6 +703,7 @@ footer {
 }
 
 @media screen and (min-width: 770px) {    
+
     #skills {
         .skills-icons {
             #skills-icon-list {

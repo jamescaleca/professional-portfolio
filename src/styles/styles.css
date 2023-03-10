@@ -16,7 +16,7 @@ body {
 header {
   background: rgba(18, 18, 18, 0.85);
   text-align: center;
-  position: relative;
+  position: fixed;
   width: 100%;
   z-index: 9990;
 }
@@ -291,7 +291,6 @@ h2 {
   flex-direction: column;
   background-color: whitesmoke;
   position: relative;
-  padding: 0;
   height: auto;
   align-items: center;
   padding-bottom: 1.3em;
@@ -312,6 +311,7 @@ h2 {
   align-items: flex-start;
   margin-left: 1rem;
   margin-right: 1rem;
+  margin-top: 50px;
 }
 #title #title-main #name {
   display: flex;
@@ -632,6 +632,9 @@ footer .professional-links img {
 }
 
 @media screen and (min-width: 400px) {
+  #title #self-port {
+    margin-top: 100px;
+  }
   #title #title-main #name {
     font-size: 3rem;
   }
