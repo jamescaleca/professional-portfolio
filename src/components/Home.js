@@ -172,9 +172,12 @@ function Home() {
                         </span>
                     </li>
                     <li className='project-screenshot'>
-                        <a href='https://diarybuddy.herokuapp.com/' target="_blank" rel="noopener noreferrer">
+                      <div className="disabled tooltip">
+                      <span className="tooltiptext">Under maintenance. Check back later!</span>
+                        <a href='https://diarybuddy.herokuapp.com/' target="_blank" rel="noopener noreferrer" style={{ "pointerEvents": "none"}}>
                             <img src={DiaryIcon} alt='diary-buddy'/>
                         </a>
+                      </div>
                         <div>
                             <span className="skills-span">SKILLS USED</span>
                             <ul>
@@ -182,7 +185,10 @@ function Home() {
                                 <li>Express.js</li>
                                 <li>MongoDB</li>
                             </ul>
-                            <a href='https://diarybuddy.herokuapp.com/' target="_blank" rel="noopener noreferrer" className="project-title">DIARY BUDDY</a>
+                            <div className="disabled tooltip">
+                              <span className="tooltiptext">Under maintenance. Check back later!</span>
+                              <a href='https://diarybuddy.herokuapp.com/' target="_blank" rel="noopener noreferrer" className="project-title">DIARY BUDDY</a>
+                            </div>
                             <label htmlFor='diary-buddy' className="project-description">
                             Collaborated with <a href='https://www.nyjiascott.com' target="_blank" rel="noopener noreferrer">Nyjia Scott</a> for an application that allows users to submit diary entries, either from a blank entry page or by choosing from a list of changing templates so they can write entries based on those prompts. I worked on much of the functionality, including adding user functionality, the search bar, and the ability to add, delete, and edit entries.</label>
                         </div>
@@ -196,9 +202,12 @@ function Home() {
                         </span>
                     </li>
                     <li className='project-screenshot'>
+                      <div className="disabled tooltip">
+                        <span className="tooltiptext">Under maintenance. Check back later!</span>
                         <a href='https://rtv-heroku.herokuapp.com/' target="_blank" rel="noopener noreferrer">
                             <img src={RTVIcon} alt='rtv'/>
                         </a>
+                      </div>
                         <div>
                             <span className="skills-span">SKILLS USED</span>
                             <ul>
@@ -207,12 +216,15 @@ function Home() {
                                 <li>MongoDB</li>
                                 <li>Mongoose Schemas</li>
                             </ul>
-                            <a href='https://rtv-heroku.herokuapp.com/' target="_blank" rel="noopener noreferrer" className="project-title">ROCK THE VOTE</a>
+                            <div className="disabled tooltip">
+                              <span className="tooltiptext">Under maintenance. Check back later!</span>
+                              <a href='https://rtv-heroku.herokuapp.com/' target="_blank" rel="noopener noreferrer" className="project-title">ROCK THE VOTE</a>
+                            </div>
                             <label htmlFor='rtv' className="project-description">Developed a website that allows users to create an account, post about politically-related issues, and upvote/downvote posts (similar to Reddit). This is one of my solo projects and was a study in creating a combination front-end and back-end application, so this gave me plenty of experience with creating Mongoose schemas and sub-schemas.</label>
                         </div>
                         <span className="project-github">
                             <a 
-                                href='https://github.com/jamescaleca/rtv-heroku' 
+                                href='https://github.com/jamescaleca/rtv-cra' 
                                 target="_blank" 
                                 rel="noopener noreferrer"
                             ><img src={GithubIcon} alt='proj-git'/>View on Github

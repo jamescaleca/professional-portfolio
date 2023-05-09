@@ -12,6 +12,13 @@ body {
   line-height: 1.2;
 }
 
+.disabled {
+  cursor: not-allowed;
+}
+.disabled a {
+  pointer-events: none;
+}
+
 /* nav styles start here */
 header {
   background: rgba(18, 18, 18, 0.85);
