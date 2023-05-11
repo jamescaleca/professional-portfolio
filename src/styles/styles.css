@@ -553,7 +553,14 @@ h2 {
   width: 30px;
   margin-right: 10px;
 }
-#projects #top-link {
+
+#pg-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#pg-bottom #top-link {
+  text-align: center;
   display: flex;
   justify-content: space-between;
   width: 9em;
@@ -561,16 +568,20 @@ h2 {
   text-decoration: none;
   color: rgb(20, 20, 20);
 }
-#projects #top-link:hover {
+#pg-bottom #top-link:hover {
   filter: invert(91%) sepia(0%) saturate(686%) hue-rotate(185deg) brightness(91%) contrast(94%);
 }
-#projects #top-link img {
+#pg-bottom #top-link img {
   height: auto;
   width: 25px;
   filter: invert(0%) sepia(0%) saturate(1004%) hue-rotate(188deg) brightness(82%) contrast(84%);
 }
-#projects #top-link p {
+#pg-bottom #top-link p {
   text-align: center;
+}
+#pg-bottom #heart {
+  width: 1rem;
+  filter: invert(12%) sepia(80%) saturate(7045%) hue-rotate(9deg) brightness(91%) contrast(114%);
 }
 
 footer {
