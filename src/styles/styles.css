@@ -450,6 +450,7 @@ h2 {
 #projects #projects-title h2 {
   margin-top: 1.3em;
   margin-bottom: 1em;
+  text-align: center;
 }
 #projects #projects-list {
   display: flex;
