@@ -620,6 +620,7 @@ footer .professional-links img {
 .tooltip {
   position: relative;
   display: flex;
+  height: auto;
 }
 
 .tooltip .tooltiptext {

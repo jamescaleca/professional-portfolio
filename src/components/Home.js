@@ -149,64 +149,6 @@ function Home() {
         </div>
         <ul id='projects-list' className='list-style-none'>
           <li className='project-screenshot'>
-            <a href='https://op-veterans-dev.web.app/' target="_blank" rel="noopener noreferrer">
-              <img src={OPVetIcon} alt='op-vet'/>
-            </a>
-            <div>
-              <span className="skills-span">SKILLS USED</span>
-              <ul>
-                <li>React.js</li>
-                <li>Firebase</li>
-                <li>Shopify</li>
-              </ul>
-              <a href='https://op-veterans-dev.web.app/' target="_blank" rel="noopener noreferrer" className="project-title">OP VETFEST</a>
-              <label htmlFor='op-vet' className="project-description">Collaborated with a team of stage two developers and instructors from V School on a registration website for an event organized by <a href="https://www.opveteran.org/" target="_blank" rel="noopener noreferrer">OP Veteran</a>. Contributed work on the user interface, including the booth registration page, displaying local and Shopify cart information, and design aspects of the sidebar.</label>
-            </div>
-            <span className="project-github">
-              <a 
-                href='https://github.com/V-School-Module-7/op-veteran' 
-                target="_blank" 
-                rel="noopener noreferrer"
-              ><img src={GithubIcon} alt='proj-git'/>View on Github
-              </a>
-            </span>
-          </li>
-          <li className='project-screenshot'>
-            <div className="disabled tooltip">
-            <span className="tooltiptext">Under maintenance. Check back later!</span>
-              <a 
-                href='https://diarybuddy.herokuapp.com/' 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                style={{ "pointerEvents": "none" }}
-              >
-                <img src={DiaryIcon} alt='diary-buddy'/>
-              </a>
-            </div>
-              <div>
-                <span className="skills-span">SKILLS USED</span>
-                <ul>
-                  <li>React.js</li>
-                  <li>Express.js</li>
-                  <li>MongoDB</li>
-                </ul>
-                <div className="disabled tooltip">
-                  <span className="tooltiptext">Under maintenance. Check back later!</span>
-                  <a href='https://diarybuddy.herokuapp.com/' target="_blank" rel="noopener noreferrer" className="project-title">DIARY BUDDY</a>
-                </div>
-                <label htmlFor='diary-buddy' className="project-description">
-                Collaborated with <a href='https://www.nyjiascott.com' target="_blank" rel="noopener noreferrer">Nyjia Scott</a> for an application that allows users to submit diary entries, either from a blank entry page or by choosing from a list of changing templates so they can write entries based on those prompts. I worked on much of the functionality, including adding user functionality, the search bar, and the ability to add, delete, and edit entries.</label>
-              </div>
-              <span className="project-github">
-                <a 
-                  href='https://github.com/jamescaleca/diary-buddy-heroku'
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                ><img src={GithubIcon} alt='proj-git'/>View on Github
-                </a>
-              </span>
-          </li>
-          <li className='project-screenshot'>
             <a 
               href='https://rtv-oha7.onrender.com' 
               target="_blank" 
@@ -228,6 +170,60 @@ function Home() {
             <span className="project-github">
               <a 
                 href='https://github.com/jamescaleca/rtv-cra' 
+                target="_blank" 
+                rel="noopener noreferrer"
+              ><img src={GithubIcon} alt='proj-git'/>View on Github
+              </a>
+            </span>
+          </li>
+          <li className='project-screenshot'>
+            <a 
+              href='https://op-veterans-dev.web.app/' 
+              target="_blank" 
+              rel="noopener noreferrer"
+            ><img src={OPVetIcon} alt='op-vet'/>
+            </a>
+            <div>
+              <span className="skills-span">SKILLS USED</span>
+              <ul>
+                <li>React.js</li>
+                <li>Firebase</li>
+                <li>Shopify</li>
+              </ul>
+              <a href='https://op-veterans-dev.web.app/' target="_blank" rel="noopener noreferrer" className="project-title">OP VETFEST</a>
+              <label htmlFor='op-vet' className="project-description">Collaborated with a team of stage two developers and instructors from V School on a registration website for an event organized by <a href="https://www.opveteran.org/" target="_blank" rel="noopener noreferrer">OP Veteran</a>. Contributed work on the user interface, including the booth registration page, displaying local and Shopify cart information, and design aspects of the sidebar.</label>
+            </div>
+            <span className="project-github">
+              <a 
+                href='https://github.com/V-School-Module-7/op-veteran' 
+                target="_blank" 
+                rel="noopener noreferrer"
+              ><img src={GithubIcon} alt='proj-git'/>View on Github
+              </a>
+            </span>
+          </li>
+          <li className='project-screenshot'>
+            <a 
+              href='https://diarybuddy.herokuapp.com/' 
+              target="_blank" 
+              rel="noopener noreferrer" 
+            >
+              <img src={DiaryIcon} alt='diary-buddy'/>
+            </a>
+            <div>
+              <span className="skills-span">SKILLS USED</span>
+              <ul>
+                <li>React.js</li>
+                <li>Express.js</li>
+                <li>MongoDB</li>
+              </ul>
+              <a href='https://diarybuddy.herokuapp.com/' target="_blank" rel="noopener noreferrer" className="project-title">DIARY BUDDY</a>
+              <label htmlFor='diary-buddy' className="project-description">
+              Collaborated with <a href='https://www.nyjiascott.com' target="_blank" rel="noopener noreferrer">Nyjia Scott</a> for an application that allows users to submit diary entries, either from a blank entry page or by choosing from a list of changing templates so they can write entries based on those prompts. I worked on much of the functionality, including adding user functionality, the search bar, and the ability to add, delete, and edit entries.</label>
+            </div>
+            <span className="project-github">
+              <a 
+                href='https://github.com/jamescaleca/diary-buddy-heroku'
                 target="_blank" 
                 rel="noopener noreferrer"
               ><img src={GithubIcon} alt='proj-git'/>View on Github
