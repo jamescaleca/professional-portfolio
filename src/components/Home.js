@@ -204,7 +204,7 @@ function Home() {
                 className="project-title"
               >OP VETFEST
               </a>
-              <label htmlFor='op-vet' className="project-description">Collaborated with a team of stage two developers and instructors from V School on a registration website for an event organized by <a href="https://www.opveteran.org/" target="_blank" rel="noopener noreferrer">OP Veteran</a>. Contributed work on the user interface, including the booth registration page, displaying local and Shopify cart information, and design aspects of the sidebar.</label>
+              <label htmlFor='op-vet' className="project-description">Login using email <u>jacaleca2.generic@gmail.com</u>. PW: ThisismypW@285!<br />Collaborated with a team of stage two developers and instructors from V School on a registration website for an event organized by <a href="https://www.opveteran.org/" target="_blank" rel="noopener noreferrer">OP Veteran</a>. Contributed work on the user interface, including the booth registration page, displaying local and Shopify cart information, and design aspects of the sidebar.</label>
             </div>
             <span className="project-github">
               <a 
