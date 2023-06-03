@@ -19,7 +19,7 @@ import Heart from '../icons/heart.svg'
 import SelfPort from '../icons/it-me2.jpg'
 import DiaryIcon from '../project-screenshots/diary-buddy.png'
 import RTVIcon from '../project-screenshots/RTV-screenshot.png'
-import CovidAppIcon from '../project-screenshots/COVID-vax-to-case-screenshot.png'
+import RecipeFinderIcon from '../project-screenshots/recipe-finder.png'
 import OPVetIcon from '../project-screenshots/op-vet.png'
 import '../styles/styles.css'
 
@@ -216,6 +216,36 @@ function Home() {
             </span>
           </li>
           <li className='project-screenshot'>
+            <a href='https://verdant-gumption-6bf265.netlify.app/' target="_blank" rel="noopener noreferrer">
+              <img src={RecipeFinderIcon} alt='recipe-finder' />
+            </a>
+            <div>
+              <span className="skills-span">SKILLS USED</span>
+              <ul>
+                <li>React.js</li>
+                <li>TheMealDB API</li>
+                <li>React Router v6</li>
+                <li>React Router Data API</li>
+              </ul>
+              <a 
+                href='https://verdant-gumption-6bf265.netlify.app/' 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="project-title"
+              >Recipe Finder
+              </a>
+              <label htmlFor='covid-app' className="project-description">Another one of my solo projects. Engineered an app, using <a href="https://www.themealdb.com/" target="_blank" rel="noopener noreferrer">TheMealDB</a> API, which allows users to see a collection of food recipes. Users may filter recipes by category, or they may search for a recipe by its name. Building this app allowed me to put into practice everything I know about React Router v6 and its Data APIs, and gave me excellent experience with visualizing API data.</label>
+            </div>
+            <span className="project-github">
+              <a 
+                href='https://github.com/jamescaleca/recipe-finder' 
+                target="_blank" 
+                rel="noopener noreferrer"
+              ><img src={GithubIcon} alt='proj-git'/>View on Github
+              </a>
+            </span>
+          </li>
+          <li className='project-screenshot'>
             <a 
               href='https://diarybuddy.herokuapp.com/' 
               target="_blank" 
@@ -243,35 +273,6 @@ function Home() {
               <a 
                 href='https://github.com/jamescaleca/diary-buddy-heroku'
                 target="_blank" 
-                rel="noopener noreferrer"
-              ><img src={GithubIcon} alt='proj-git'/>View on Github
-              </a>
-            </span>
-          </li>
-          <li className='project-screenshot'>
-            <a href='https://angry-goldstine-db1057.netlify.app/' target="_blank" rel="noopener noreferrer">
-              <img src={CovidAppIcon} alt='covid-app' />
-            </a>
-            <div>
-              <span className="skills-span">SKILLS USED</span>
-              <ul>
-                <li>React.js</li>
-                <li>Google Maps API</li>
-                <li>COVID Act Now API</li>
-                <li>OpenDataSoft API</li>
-              </ul>
-              <a 
-                href='https://angry-goldstine-db1057.netlify.app/' 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="project-title"
-              >COVID VAX-TO-CASE
-              </a>
-              <label htmlFor='covid-app' className="project-description">Another one of my solo projects. Engineered an app, using three APIs, that allows users to see COVID vaccination data and compare them to case numbers in each state and county across the USA. Vaccination data is illustrated using a Google heat map. This gave me excellent experience with visualizing daily-updated API data.</label>
-            </div>
-            <span className="project-github">
-              <a 
-                href='https://github.com/jamescaleca/covid-vax-to-case' target="_blank" 
                 rel="noopener noreferrer"
               ><img src={GithubIcon} alt='proj-git'/>View on Github
               </a>
