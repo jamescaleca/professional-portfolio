@@ -232,7 +232,7 @@ function Home() {
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="project-title"
-              >Recipe Finder
+              >RECIPE FINDER
               </a>
               <label htmlFor='covid-app' className="project-description">Another one of my solo projects. Engineered an app, using <a href="https://www.themealdb.com/" target="_blank" rel="noopener noreferrer">TheMealDB</a> API, which allows users to see a collection of food recipes. Users may filter recipes by category, or they may search for a recipe by its name. Building this app allowed me to put into practice everything I know about React Router v6 and its Data APIs, and gave me excellent experience with visualizing API data.</label>
             </div>
