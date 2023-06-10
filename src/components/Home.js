@@ -23,7 +23,7 @@ import RecipeFinderIcon from '../project-screenshots/recipe-finder.png'
 import OPVetIcon from '../project-screenshots/op-vet.png'
 import '../styles/styles.css'
 
-function Home() {
+export default function Home() {
   const [modal, setModal] = useState(false)
 
   const toggleModal = () => {setModal(!modal)}
@@ -234,7 +234,7 @@ function Home() {
                 className="project-title"
               >RECIPE FINDER
               </a>
-              <label htmlFor='covid-app' className="project-description">Another one of my solo projects. Engineered an app, using <a href="https://www.themealdb.com/" target="_blank" rel="noopener noreferrer">TheMealDB</a> API, which allows users to see a collection of food recipes. Users may filter recipes by category, or they may search for a recipe by its name. Building this app allowed me to put into practice everything I know about React Router v6 and its Data APIs, and gave me excellent experience with visualizing API data.</label>
+              <label htmlFor='recipe-finder' className="project-description">Another one of my solo projects. Engineered an app, using <a href="https://www.themealdb.com/" target="_blank" rel="noopener noreferrer">TheMealDB</a> API, which allows users to see a collection of food recipes. Users may filter recipes by category, or they may search for a recipe by its name. Building this app allowed me to put into practice everything I know about React Router v6 and its Data APIs, and gave me excellent experience with visualizing API data.</label>
             </div>
             <span className="project-github">
               <a 
@@ -247,7 +247,7 @@ function Home() {
           </li>
           <li className='project-screenshot'>
             <a 
-              href='https://diarybuddy.herokuapp.com/' 
+              href='https://diary-buddy-vukk.onrender.com/' 
               target="_blank" 
               rel="noopener noreferrer" 
             ><img src={DiaryIcon} alt='diary-buddy'/>
@@ -257,10 +257,12 @@ function Home() {
               <ul>
                 <li>React.js</li>
                 <li>Express.js</li>
+                <li>User Authentication</li>
                 <li>MongoDB</li>
+                <li>Mongoose Schemas</li>
               </ul>
               <a 
-                href='https://diarybuddy.herokuapp.com/' 
+                href='https://diary-buddy-vukk.onrender.com/' 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="project-title"
@@ -271,7 +273,7 @@ function Home() {
             </div>
             <span className="project-github">
               <a 
-                href='https://github.com/jamescaleca/diary-buddy-heroku'
+                href='https://github.com/jamescaleca/diary-buddy-render'
                 target="_blank" 
                 rel="noopener noreferrer"
               ><img src={GithubIcon} alt='proj-git'/>View on Github
@@ -289,5 +291,3 @@ function Home() {
     </>
   )
 }
-
-export default Home
