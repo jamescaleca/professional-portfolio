@@ -223,6 +223,7 @@ export default function Home() {
               <span className="skills-span">SKILLS USED</span>
               <ul>
                 <li>React.js</li>
+                <li>Bootstrap</li>
                 <li>TheMealDB API</li>
                 <li>React Router v6</li>
                 <li>React Router Data API</li>
