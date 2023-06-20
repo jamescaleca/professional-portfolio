@@ -149,34 +149,30 @@ export default function Home() {
         </div>
         <ul id='projects-list' className='list-style-none'>
           <li className='project-screenshot'>
-            <a 
-              href='https://rtv-oha7.onrender.com' 
-              target="_blank" 
-              rel="noopener noreferrer" 
-            >
-              <img src={RTVIcon} alt='rtv'/>
+            <a href='https://verdant-gumption-6bf265.netlify.app/' target="_blank" rel="noopener noreferrer">
+              <img src={RecipeFinderIcon} alt='recipe-finder' />
             </a>
             <div>
               <span className="skills-span">SKILLS USED</span>
               <ul>
                 <li>React.js</li>
-                <li>Express.js</li>
-                <li>User Authentication</li>
-                <li>MongoDB</li>
-                <li>Mongoose Schemas</li>
+                <li>Bootstrap</li>
+                <li>TheMealDB API</li>
+                <li>React Router v6</li>
+                <li>React Router Data API</li>
               </ul>
               <a 
-                href='https://rtv-oha7.onrender.com' 
+                href='https://verdant-gumption-6bf265.netlify.app/' 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="project-title"
-              >ROCK THE VOTE
+              >RECIPE FINDER
               </a>
-              <label htmlFor='rtv' className="project-description">Developed a website that allows users to create an account, post about politically-related issues, and upvote/downvote posts (similar to Reddit). This is one of my solo projects and was a study in creating a full-stack application with user authentication and one-to-many relationships with Mongoose schemas.</label>
+              <label htmlFor='recipe-finder' className="project-description">Another one of my solo projects. Engineered an app, using <a href="https://www.themealdb.com/" target="_blank" rel="noopener noreferrer">TheMealDB</a> API, which allows users to see a collection of food recipes. Users may filter recipes by category, or they may search for a recipe by its name. Building this app allowed me to put into practice everything I know about React Router v6 and its Data APIs, and gave me excellent experience with visualizing API data.</label>
             </div>
             <span className="project-github">
               <a 
-                href='https://github.com/jamescaleca/rtv-cra' 
+                href='https://github.com/jamescaleca/recipe-finder' 
                 target="_blank" 
                 rel="noopener noreferrer"
               ><img src={GithubIcon} alt='proj-git'/>View on Github
@@ -216,30 +212,34 @@ export default function Home() {
             </span>
           </li>
           <li className='project-screenshot'>
-            <a href='https://verdant-gumption-6bf265.netlify.app/' target="_blank" rel="noopener noreferrer">
-              <img src={RecipeFinderIcon} alt='recipe-finder' />
+            <a 
+              href='https://rtv-oha7.onrender.com' 
+              target="_blank" 
+              rel="noopener noreferrer" 
+            >
+              <img src={RTVIcon} alt='rtv'/>
             </a>
             <div>
               <span className="skills-span">SKILLS USED</span>
               <ul>
                 <li>React.js</li>
-                <li>Bootstrap</li>
-                <li>TheMealDB API</li>
-                <li>React Router v6</li>
-                <li>React Router Data API</li>
+                <li>Express.js</li>
+                <li>User Authentication</li>
+                <li>MongoDB</li>
+                <li>Mongoose Schemas</li>
               </ul>
               <a 
-                href='https://verdant-gumption-6bf265.netlify.app/' 
+                href='https://rtv-oha7.onrender.com' 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="project-title"
-              >RECIPE FINDER
+              >ROCK THE VOTE
               </a>
-              <label htmlFor='recipe-finder' className="project-description">Another one of my solo projects. Engineered an app, using <a href="https://www.themealdb.com/" target="_blank" rel="noopener noreferrer">TheMealDB</a> API, which allows users to see a collection of food recipes. Users may filter recipes by category, or they may search for a recipe by its name. Building this app allowed me to put into practice everything I know about React Router v6 and its Data APIs, and gave me excellent experience with visualizing API data.</label>
+              <label htmlFor='rtv' className="project-description">Developed a website that allows users to create an account, post about politically-related issues, and upvote/downvote posts (similar to Reddit). This is one of my solo projects and was a study in creating a full-stack application with user authentication and one-to-many relationships with Mongoose schemas.</label>
             </div>
             <span className="project-github">
               <a 
-                href='https://github.com/jamescaleca/recipe-finder' 
+                href='https://github.com/jamescaleca/rtv-cra' 
                 target="_blank" 
                 rel="noopener noreferrer"
               ><img src={GithubIcon} alt='proj-git'/>View on Github
