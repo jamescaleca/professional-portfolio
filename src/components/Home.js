@@ -26,7 +26,7 @@ import '../styles/styles.css'
 export default function Home() {
   const [modal, setModal] = useState(false)
 
-  const toggleModal = () => {setModal(!modal)}
+  const toggleModal = () => setModal(!modal)
 
   if(modal) {
     document.body.classList.add('active-modal')
@@ -41,29 +41,32 @@ export default function Home() {
       <div id='title'>
         <img id='self-port' src={SelfPort} alt='me-img' />
         <div id='title-main'>
-          <h1 id='name'>JAMES CALECA</h1>
+          <h1 id='name' className="all-caps">James Caleca</h1>
           <ul id='title-subtitle'>
-            <li className='profession'>FULL-STACK WEB DEVELOPER</li>
+            <li className='profession all-caps'>Full-stack web developer</li>
+            <li className="profession-subtitle">Making the web simple, elegant, and accessible.</li>
             <div className='hobbies-section'>
               <li className='hobby'>
                 <img src={MusicIcon} alt='cat-icon'/>
-                <span className='hobby-text'>MUSICIAN</span>
+                <span className='hobby-text all-caps'>Musician</span>
               </li>
               <li className='hobby'>
                 <img src={CatIcon} alt='cat-icon'/>
-                <span className='hobby-text'>CAT DAD</span>
+                <span className='hobby-text all-caps'>Cat dad</span>
               </li>
               <li className='hobby'>
                 <img src={GamePadIcon} alt='cat-icon'/>
-                <span className='hobby-text'>VIDEO GAME ENTHUSIAST</span>
+                <span className='hobby-text all-caps'>Video game enthusiast</span>
               </li>
             </div>
           </ul>
           <div id='about-me'>
-            <h2>A LITTLE ABOUT ME</h2>
-            <p>Full-stack web developer. Experienced in: JavaScript, Next.js React.js, Node.js, HTML, CSS, Tailwind, AJAX, JSON, APIs, MongoDB, and Express. I love to learn, I love to help people, and I am thrilled that I get to do both of those things for my career.</p>
+            <h2 className="all-caps">A little about me</h2>
+            <p>I want to make the web simple, elegant, and accessible for everyone. I love to learn, I love to help people, and I am thrilled that I get to do both of those things for my career.</p>
                 
-            <p>I have a great passion for music - listening to it, practicing my electric bass and guitar, and dabbling in music production. I am the caregiver of two incredible cats. And I am a lifelong lover of video games, as well as all art in general.</p>
+            <p>I have a great passion for music - listening to it, practicing my electric bass and guitar, and dabbling in music production. I take care of two incredible cats. And I am a lifelong lover of video games, as well as all art in general.</p>
+
+            <p>Experienced in: <b>JavaScript, Next.js React.js, Node.js, HTML, CSS, Sass, Tailwind, AJAX/HTTP, JSON, APIs, MongoDB, Express, and Git</b>.</p>
           </div>
         </div>
       </div>
@@ -72,7 +75,7 @@ export default function Home() {
         
       <div id='skills'>
         <div className='skills-icons'>
-          <h2 className='skills-header'>SKILLS</h2>
+          <h2 className='skills-header all-caps'>Skills</h2>
           <ul className='list-style-none' id='skills-icon-list'>
             <li className='tooltip'>
               <span className='tooltiptext'>Next.js</span>
@@ -118,7 +121,7 @@ export default function Home() {
         </div>
         <div id='skills-list-grid'>
           <div className='skills-three-columns' id='skills-column1'>
-            <h2 className='skills-cat'>LANGUAGES</h2>
+            <h2 className='skills-cat all-caps'>Languages</h2>
             <ul className='list-style-none skills-list'>
               <li>JavaScript</li>
               <li>HTML5</li>
@@ -126,7 +129,7 @@ export default function Home() {
             </ul>
           </div>
           <div className='skills-three-columns' id='skills-column2'>
-            <h2 className='skills-cat'>FRAMEWORKS</h2>
+            <h2 className='skills-cat all-caps'>Frameworks</h2>
             <ul className='list-style-none skills-list'>
               <li>Next.js</li>
               <li>React.js</li>
@@ -134,7 +137,7 @@ export default function Home() {
             </ul>
           </div>
           <div className='skills-three-columns' id='skills-column3'>
-            <h2 className='skills-cat'>DATABASE</h2>
+            <h2 className='skills-cat all-caps'>Database</h2>
             <ul className='list-style-none skills-list'>
               <li>MongoDB</li>
               <li>Express.js</li>
@@ -145,7 +148,7 @@ export default function Home() {
       </div>
       <div id='projects'>
         <div id='projects-title'>
-          <h2>PROJECTS I'VE WORKED ON</h2>
+          <h2 className="all-caps">Projects I've worked on</h2>
         </div>
         <ul id='projects-list' className='list-style-none'>
           <li className='project-screenshot'>
@@ -153,7 +156,7 @@ export default function Home() {
               <img src={RecipeFinderIcon} alt='recipe-finder' />
             </a>
             <div>
-              <span className="skills-span">SKILLS USED</span>
+              <span className="skills-span all-caps">Skills used</span>
               <ul>
                 <li>React.js</li>
                 <li>Bootstrap</li>
@@ -165,8 +168,8 @@ export default function Home() {
                 href='https://verdant-gumption-6bf265.netlify.app/' 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="project-title"
-              >RECIPE FINDER
+                className="project-title all-caps"
+              >Recipe Finder
               </a>
               <label htmlFor='recipe-finder' className="project-description">Another one of my solo projects. Engineered an app, using <a href="https://www.themealdb.com/" target="_blank" rel="noopener noreferrer">TheMealDB</a> API, which allows users to see a collection of food recipes. Users may filter recipes by category, or they may search for a recipe by its name. Building this app allowed me to put into practice everything I know about React Router v6 and its Data APIs, and gave me excellent experience with visualizing API data.</label>
             </div>
@@ -187,7 +190,7 @@ export default function Home() {
             ><img src={OPVetIcon} alt='op-vet'/>
             </a>
             <div>
-              <span className="skills-span">SKILLS USED</span>
+              <span className="skills-span all-caps">Skills used</span>
               <ul>
                 <li>React.js</li>
                 <li>Firebase</li>
@@ -197,8 +200,8 @@ export default function Home() {
                 href='https://op-veterans-dev.web.app/' 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="project-title"
-              >OP VETFEST
+                className="project-title all-caps"
+              >OP Vetfest
               </a>
               <label htmlFor='op-vet' className="project-description">Login using email <u>jacaleca2.generic@gmail.com</u>. PW: ThisismypW@285!<br />Collaborated with a team of stage two developers and instructors from V School on a registration website for an event organized by <a href="https://www.opveteran.org/" target="_blank" rel="noopener noreferrer">OP Veteran</a>. Contributed work on the user interface, including the booth registration page, displaying local and Shopify cart information, and design aspects of the sidebar.</label>
             </div>
@@ -220,7 +223,7 @@ export default function Home() {
               <img src={RTVIcon} alt='rtv'/>
             </a>
             <div>
-              <span className="skills-span">SKILLS USED</span>
+              <span className="skills-span all-caps">Skills used</span>
               <ul>
                 <li>React.js</li>
                 <li>Express.js</li>
@@ -232,8 +235,8 @@ export default function Home() {
                 href='https://rtv-oha7.onrender.com' 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="project-title"
-              >ROCK THE VOTE
+                className="project-title all-caps"
+              >Rock the Vote!
               </a>
               <label htmlFor='rtv' className="project-description">Developed a website that allows users to create an account, post about politically-related issues, and upvote/downvote posts (similar to Reddit). This is one of my solo projects and was a study in creating a full-stack application with user authentication and one-to-many relationships with Mongoose schemas.</label>
             </div>
@@ -254,7 +257,7 @@ export default function Home() {
             ><img src={DiaryIcon} alt='diary-buddy'/>
             </a>
             <div>
-              <span className="skills-span">SKILLS USED</span>
+              <span className="skills-span all-caps">Skills used</span>
               <ul>
                 <li>React.js</li>
                 <li>Express.js</li>
@@ -266,8 +269,8 @@ export default function Home() {
                 href='https://diary-buddy-vukk.onrender.com/' 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="project-title"
-              >DIARY BUDDY
+                className="project-title all-caps"
+              >Diary Buddy
               </a>
               <label htmlFor='diary-buddy' className="project-description">
               Collaborated with <a href='https://www.nyjiascott.com' target="_blank" rel="noopener noreferrer">Nyjia Scott</a> for an application that allows users to submit diary entries, either from a blank entry page or by choosing from a list of changing templates so they can write entries based on those prompts. I worked on much of the functionality, including adding user functionality, the search bar, and the ability to add, delete, and edit entries.</label>
@@ -285,7 +288,7 @@ export default function Home() {
       </div>
       <div id="pg-bottom">
         <a id="top-link" href="#top">
-          <img src={UpArrowIcon} alt="up-arrow"></img><p>BACK TO TOP</p>
+          <img src={UpArrowIcon} alt="up-arrow"></img><p className="all-caps">Back to top</p>
         </a>
         <p>Created and maintained with <img id="heart" src={Heart} alt='heart-icon'/> by James Caleca</p>
       </div>

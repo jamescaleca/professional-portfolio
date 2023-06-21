@@ -5,14 +5,10 @@ $font-title: 'Ubuntu', sans-serif;
 $font-subtitle: 'Ubuntu', sans-serif;
 $font-body: 'Open Sans', sans-serif; 
 
+$text-color-secondary: rgb(118, 118, 118);
+
 $color1: whitesmoke;
 $color2: rgb(20, 20, 20);
-
-$primary-light-hsl: 200, 100%, 91%;
-$primary-hsl: 200, 100%, 50%;
-$primary-dark-hsl: 200, 100%, 6%;
-$success-hsl: 100, 60%, 50%;
-$error-hsl: 0, 60%, 50%;
 
 $background: rgba(18, 18, 18, 0.85);
 
@@ -33,6 +29,10 @@ body {
   a {
     pointer-events: none;
   }
+}
+
+.all-caps {
+  text-transform: uppercase;
 }
 
 /* nav styles start here */
@@ -67,7 +67,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    margin-left: 1em;
+    margin-left: 1rem;
     height: 100%;
     display: flex;
     align-items: center;
@@ -113,8 +113,8 @@ header {
       padding: 0;
       list-style: none;
       li {
-        margin-bottom: 1em;
-        margin-left: 1em;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
         .contact-me {
           background-color: #ece9e6;
           border: 2px solid #422800;
@@ -143,7 +143,7 @@ header {
           }
         }
         a {
-          color: white;
+          color: $color1;
           text-decoration: none;
           font-size: 1.2rem;
           text-transform: uppercase;
@@ -329,18 +329,17 @@ h2 {
   flex-direction: column;
   background-color: $color1;
   position: relative;
-  // z-index: 0;
   height: auto;
   align-items: center;
-  padding-bottom: 1.3em;
+  padding-bottom: 1.3rem;
   #self-port {
     display: flex;
     object-fit: cover;
     position: relative;
     border-radius: 50%;
     height: auto;
-    width: 22em;
-    margin-top: 2.5em;
+    width: 22rem;
+    margin-top: 2.5rem;
   }
   #title-main {
     display: flex;
@@ -352,8 +351,6 @@ h2 {
     #name {
       display: flex;
       position: relative;
-      // text-align: center;
-      // align-items: center;
       font-size: 5rem;
       margin-top: 2.5rem;
       margin-bottom: 1rem;
@@ -361,13 +358,18 @@ h2 {
     #title-subtitle {
       list-style-type: none;
       width: auto;
-      margin-bottom: 1em;
+      margin-bottom: 1rem;
       padding: 0;
       .profession {
         font-size: 1.1rem;
-        color:rgb(118, 118, 118);
-        letter-spacing: .2em;
-        margin-bottom: 1em;
+        color:$text-color-secondary;
+        letter-spacing: .3rem;
+        margin-bottom: 1rem;
+      }
+      .profession-subtitle {
+        color: $text-color-secondary;
+        letter-spacing: .02rem;
+
       }
       .hobbies-section {
         margin-top: 2em;
@@ -390,13 +392,13 @@ h2 {
       border-radius: 15px;
       padding: .5em 1em;
       h2 {
-        margin-top: 10px;
+        margin-top: .3rem;
       }
       p {
         font-size: .9em;
         margin-bottom: 10px;
-        margin-top: 0px;
-        color:rgb(118, 118, 118);
+        margin-top: 0;
+        color:$text-color-secondary;
       }
     }
   }
@@ -416,8 +418,7 @@ h2 {
     .skills-header {
       display: flex;
       justify-content: center;
-      margin-top: 2em;
-      margin-bottom: 2em;
+      margin: 4rem 0;
       font-size: 2rem;
     }
     #skills-icon-list {
@@ -427,12 +428,11 @@ h2 {
       gap: 2em .5em;
       justify-content: space-evenly;
       align-content: space-between;
-      margin-bottom: 5em;
+      margin-bottom: 5rem;
 
       img {
         filter: invert(99%) sepia(0%) saturate(244%) hue-rotate(78deg) brightness(115%) contrast(92%);
-        height: 4.5em;
-        width: auto;
+        width: 4.7rem;
         margin-left: 10px;
         margin-right: 10px;
       }
@@ -461,7 +461,7 @@ h2 {
       }
       #skills-column2,
       #skills-column3 {
-        border-left: 1px solid whitesmoke;
+        border-left: 1px solid $color1;
       }
   }
 }
@@ -478,10 +478,10 @@ h2 {
     display: flex;
     justify-content: center;
     margin: 0;
-    padding-bottom: 2em;
+    padding-bottom: 2rem;
     h2 {
-      margin-top: 1.3em;
-      margin-bottom: 1em;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
       text-align: center;
     }
   }
@@ -597,7 +597,7 @@ h2 {
     text-align: center;
     display: flex;
     justify-content: space-between;
-    width: 9em;
+    width: 9rem;
     height: auto;
     text-decoration: none;
     color: $color2;
@@ -617,39 +617,6 @@ h2 {
   #heart {
     width: 1rem;
     filter: invert(12%) sepia(80%) saturate(7045%) hue-rotate(9deg) brightness(91%) contrast(114%);
-  }
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $color2;
-  margin-top: 0;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  flex-direction: column;
-  a {
-    text-decoration: none;
-    p {
-      color: whitesmoke;
-      &:hover {
-        color:rgb(207, 207, 207);
-      }
-    }
-  }
-  .professional-links {
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    margin: 2em 4em;
-    padding: 0;
-    justify-content: space-between;
-    img {
-      filter: invert(99%) sepia(0%) saturate(244%) hue-rotate(78deg) brightness(115%) contrast(92%);
-      height: 2.5em;
-      width: auto;
-    }
   }
 }
 

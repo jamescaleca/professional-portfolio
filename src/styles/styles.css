@@ -19,6 +19,10 @@ body {
   pointer-events: none;
 }
 
+.all-caps {
+  text-transform: uppercase;
+}
+
 /* nav styles start here */
 header {
   background: rgba(18, 18, 18, 0.85);
@@ -47,7 +51,7 @@ header .nav-toggle-label {
   position: absolute;
   top: 0;
   left: 0;
-  margin-left: 1em;
+  margin-left: 1rem;
   height: 100%;
   display: flex;
   align-items: center;
@@ -90,8 +94,8 @@ header nav ul {
   list-style: none;
 }
 header nav ul li {
-  margin-bottom: 1em;
-  margin-left: 1em;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
 }
 header nav ul li .contact-me {
   background-color: #ece9e6;
@@ -122,7 +126,7 @@ header nav ul li .contact-me:active {
   transform: translate(2px, 2px);
 }
 header nav ul li a {
-  color: white;
+  color: whitesmoke;
   text-decoration: none;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -300,7 +304,7 @@ h2 {
   position: relative;
   height: auto;
   align-items: center;
-  padding-bottom: 1.3em;
+  padding-bottom: 1.3rem;
 }
 #title #self-port {
   display: flex;
@@ -309,8 +313,8 @@ h2 {
   position: relative;
   border-radius: 50%;
   height: auto;
-  width: 22em;
-  margin-top: 2.5em;
+  width: 22rem;
+  margin-top: 2.5rem;
 }
 #title #title-main {
   display: flex;
@@ -330,14 +334,18 @@ h2 {
 #title #title-main #title-subtitle {
   list-style-type: none;
   width: auto;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
   padding: 0;
 }
 #title #title-main #title-subtitle .profession {
   font-size: 1.1rem;
   color: rgb(118, 118, 118);
-  letter-spacing: 0.2em;
-  margin-bottom: 1em;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1rem;
+}
+#title #title-main #title-subtitle .profession-subtitle {
+  color: rgb(118, 118, 118);
+  letter-spacing: 0.02rem;
 }
 #title #title-main #title-subtitle .hobbies-section {
   margin-top: 2em;
@@ -360,12 +368,12 @@ h2 {
   padding: 0.5em 1em;
 }
 #title #title-main #about-me h2 {
-  margin-top: 10px;
+  margin-top: 0.3rem;
 }
 #title #title-main #about-me p {
   font-size: 0.9em;
   margin-bottom: 10px;
-  margin-top: 0px;
+  margin-top: 0;
   color: rgb(118, 118, 118);
 }
 
@@ -385,8 +393,7 @@ h2 {
 #skills .skills-icons .skills-header {
   display: flex;
   justify-content: center;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin: 4rem 0;
   font-size: 2rem;
 }
 #skills .skills-icons #skills-icon-list {
@@ -396,12 +403,11 @@ h2 {
   gap: 2em 0.5em;
   justify-content: space-evenly;
   align-content: space-between;
-  margin-bottom: 5em;
+  margin-bottom: 5rem;
 }
 #skills .skills-icons #skills-icon-list img {
   filter: invert(99%) sepia(0%) saturate(244%) hue-rotate(78deg) brightness(115%) contrast(92%);
-  height: 4.5em;
-  width: auto;
+  width: 4.7rem;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -445,11 +451,11 @@ h2 {
   display: flex;
   justify-content: center;
   margin: 0;
-  padding-bottom: 2em;
+  padding-bottom: 2rem;
 }
 #projects #projects-title h2 {
-  margin-top: 1.3em;
-  margin-bottom: 1em;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 #projects #projects-list {
@@ -564,7 +570,7 @@ h2 {
   text-align: center;
   display: flex;
   justify-content: space-between;
-  width: 9em;
+  width: 9rem;
   height: auto;
   text-decoration: none;
   color: rgb(20, 20, 20);
@@ -583,39 +589,6 @@ h2 {
 #pg-bottom #heart {
   width: 1rem;
   filter: invert(12%) sepia(80%) saturate(7045%) hue-rotate(9deg) brightness(91%) contrast(114%);
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(20, 20, 20);
-  margin-top: 0;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  flex-direction: column;
-}
-footer a {
-  text-decoration: none;
-}
-footer a p {
-  color: whitesmoke;
-}
-footer a p:hover {
-  color: rgb(207, 207, 207);
-}
-footer .professional-links {
-  width: 90%;
-  display: flex;
-  flex-direction: row;
-  margin: 2em 4em;
-  padding: 0;
-  justify-content: space-between;
-}
-footer .professional-links img {
-  filter: invert(99%) sepia(0%) saturate(244%) hue-rotate(78deg) brightness(115%) contrast(92%);
-  height: 2.5em;
-  width: auto;
 }
 
 .tooltip {
