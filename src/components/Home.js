@@ -60,13 +60,13 @@ export default function Home() {
               </li>
             </div>
           </ul>
-          <div id='about-me'>
+          <div id='about-me' className="box-container">
             <h2 className="all-caps">A little about me</h2>
             <p>I want to make the web simple, elegant, and accessible for everyone. I love to learn, I love to help people, and I am thrilled that I get to do both of those things for my career.</p>
                 
             <p>I have a great passion for music - listening to it, practicing my electric bass and guitar, and dabbling in music production. I take care of two incredible cats. And I am a lifelong lover of video games, as well as all art in general.</p>
 
-            <p>Experienced in: <b>JavaScript, Next.js React.js, Node.js, HTML, CSS, Sass, Tailwind, AJAX/HTTP, JSON, APIs, MongoDB, Express, and Git</b>.</p>
+            <p>Experienced in: <b>JavaScript</b>, <b>Next.js</b>, <b>React.js</b>, <b>Node.js</b>, <b>HTML</b>, <b>CSS</b>, <b>Sass</b>, <b>Tailwind</b>, <b>AJAX/HTTP</b>, <b>JSON</b>, <b>APIs</b>, <b>MongoDB</b>, <b>Express</b>, and <b>Git</b>.</p>
           </div>
         </div>
       </div>
@@ -151,7 +151,7 @@ export default function Home() {
           <h2 className="all-caps">Projects I've worked on</h2>
         </div>
         <ul id='projects-list' className='list-style-none'>
-          <li className='project-screenshot'>
+          <li className='project-screenshot box-container'>
             <a href='https://verdant-gumption-6bf265.netlify.app/' target="_blank" rel="noopener noreferrer">
               <img src={RecipeFinderIcon} alt='recipe-finder' />
             </a>
@@ -182,7 +182,7 @@ export default function Home() {
               </a>
             </span>
           </li>
-          <li className='project-screenshot'>
+          <li className='project-screenshot box-container'>
             <a 
               href='https://op-veterans-dev.web.app/' 
               target="_blank" 
@@ -214,7 +214,7 @@ export default function Home() {
               </a>
             </span>
           </li>
-          <li className='project-screenshot'>
+          <li className='project-screenshot box-container'>
             <a 
               href='https://rtv-oha7.onrender.com' 
               target="_blank" 
@@ -249,7 +249,7 @@ export default function Home() {
               </a>
             </span>
           </li>
-          <li className='project-screenshot'>
+          <li className='project-screenshot box-container'>
             <a 
               href='https://diary-buddy-vukk.onrender.com/' 
               target="_blank" 

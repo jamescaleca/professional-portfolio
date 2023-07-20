@@ -23,9 +23,15 @@ body {
   text-transform: uppercase;
 }
 
+.box-container {
+  border: 1px solid rgba(94, 94, 94, 0.758);
+  box-shadow: #422800 4px 4px 0 0;
+  border-radius: 15px;
+}
+
 /* nav styles start here */
 header {
-  background: rgba(18, 18, 18, 0.85);
+  background: rgba(9, 9, 9, 0.888);
   text-align: center;
   position: fixed;
   width: 100%;
@@ -82,7 +88,7 @@ header nav {
   text-align: left;
   top: 100%;
   left: 0;
-  background: rgba(18, 18, 18, 0.85);
+  background: rgba(9, 9, 9, 0.888);
   width: 100%;
   transform: scale(1, 0);
   transform-origin: top;
@@ -363,8 +369,6 @@ h2 {
 #title #title-main #about-me {
   display: flex;
   flex-flow: column wrap;
-  border: 1px solid rgba(94, 94, 94, 0.758);
-  border-radius: 15px;
   padding: 0.5em 1em;
 }
 #title #title-main #about-me h2 {
@@ -470,8 +474,6 @@ h2 {
 #projects #projects-list .project-screenshot {
   display: flex;
   margin-bottom: 1em;
-  border: 1px solid rgba(94, 94, 94, 0.758);
-  border-radius: 15px;
   flex-flow: column wrap;
   position: relative;
   justify-content: space-between;
