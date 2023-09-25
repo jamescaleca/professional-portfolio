@@ -20,7 +20,7 @@ import SelfPort from '../icons/it-me2.jpg'
 import DiaryIcon from '../project-screenshots/diary-buddy.png'
 import RTVIcon from '../project-screenshots/RTV-screenshot.png'
 import RecipeFinderIcon from '../project-screenshots/recipe-finder.png'
-import OPVetIcon from '../project-screenshots/op-vet.png'
+// import OPVetIcon from '../project-screenshots/op-vet.png'
 import '../styles/styles.css'
 
 export default function Home() {
@@ -182,7 +182,7 @@ export default function Home() {
               </a>
             </span>
           </li>
-          <li className='project-screenshot box-container'>
+          {/* <li className='project-screenshot box-container'>
             <a 
               href='https://op-veterans-dev.web.app/' 
               target="_blank" 
@@ -213,7 +213,7 @@ export default function Home() {
               ><img src={GithubIcon} alt='proj-git'/>View on Github
               </a>
             </span>
-          </li>
+          </li> */}
           <li className='project-screenshot box-container'>
             <a 
               href='https://rtv-oha7.onrender.com' 
